@@ -1,11 +1,11 @@
 # Simbología de Digrama de flujos
 
-Dentro de los diagramas de flujo existe una varidad de simbologia, sin embargo, aqui solo estatemos viendo la simbologiaa basica.
+Dentro de los diagramas de flujo existe una varidad de simbologia, sin embargo, aqui solo estatemos viendo la simbologia basica.
 
 Nombre|Símbolo
 :-:|:-:
 Inicio/Fin| ![simbolo](./img/1.jpg)
-Proceso u Operación| ![simbolo](./img/2.jpg)
+Proceso, Operación o Accion| ![simbolo](./img/2.jpg)
 Entrada/Salida de datos| ![simbolo](./img/4.jpg)
 Decisión| ![simbolo](./img/5.jpg)
 Display| ![simbolo](./img/6.jpg)
