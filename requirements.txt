@@ -1,0 +1,5 @@
+mkdocs==1.2.3
+mkdocs-markmap==2.2.0
+mkdocs-material==8.1.6
+mkdocs-material-extensions==1.0.3
+mkdocs-plugin-tags==1.0.2
