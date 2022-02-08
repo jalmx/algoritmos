@@ -26,7 +26,7 @@
 
 ## Pseucodigo
 
-Es una manera de expresar un algoritmo de manera natural, muy cercano a una receta de cocina o unas simples instrucciones
+Es una manera de expresar un algoritmo de manera natural, muy cercano a una receta de cocina o unas simples instrucciones.
 
 **Ejemplo:**
 
