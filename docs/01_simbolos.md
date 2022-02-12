@@ -1,4 +1,4 @@
-# Simbología de Digrama de flujos
+# Simbología de Diagramas de flujos
 
 Dentro de los diagramas de flujo existe una varidad de simbologia, sin embargo, aqui solo estatemos viendo la simbologia basica.
 

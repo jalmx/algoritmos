@@ -1,4 +1,11 @@
-# Operadores aritmeticos
+---
+title: Operadores aritméticos
+author: Alejandro Leyva
+---
+
+![banner micro](https://www.alejandro-leyva.com/micro-21/web/imgs/banner.png)
+
+# Operadores aritméticos
 
 En esta sección veremos los operadores arítmeticos basicos que podemos encontrar en la mayoria de lenguajes.
 
