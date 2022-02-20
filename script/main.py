@@ -1,3 +1,1 @@
-import add_link_pdf
-
-add_link_pdf.get_files_md()
+# Esto es para cuando tenga mas scripts que deba correr
