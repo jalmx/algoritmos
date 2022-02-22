@@ -87,6 +87,6 @@ if __name__ == "__main__":
 
     for markdown in get_files_md(path_to_search):
         clear_link(markdown)
-        inject_code(markdown, get_name_file(markdown))
+        #inject_code(markdown, get_name_file(markdown))
         
         

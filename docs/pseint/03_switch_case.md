@@ -1,5 +1,5 @@
-## Switch Case
-<br>
+# Switch Case
+
 <font face="courier new" color="grey" size=3>//Estructura</font>
 
 <font face="courier new" color="blue" size=3>Segun </font><font face="courier new" size=3>variable </font><font face="courier new" color="blue" size=3>Hacer</font>
@@ -24,8 +24,6 @@
 
 <font face="courier new" color="blue" size=3>FinSegun</font>
 
-<br>
-<br>
 
 <font face="courier new" color="grey" size=3>//Ejemplo</font>
 
@@ -42,7 +40,7 @@
 
 <font face="courier new" color="blue" size=3>Leer </font><font face="courier new" size=3> num</font>
 
-<br>
+
 <font face="courier new" color="blue" size=3>Segun </font><font face="courier new" size=3>num </font><font face="courier new" color="blue" size=3>Hacer</font>
 
 <font face="courier new" color="orange" size=3>&nbsp;1:</font>

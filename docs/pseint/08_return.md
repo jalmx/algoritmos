@@ -1,5 +1,5 @@
 ## Funcion Con Retorno
-<br>
+
 <font face="courier new" color="grey" size=3>//Estructura</font>
 
 <font face="courier new" color="blue" size=3>Funcion </font><font face="courier new" size=3>variable_de_retorno = nombre(n1, n2)</font>
@@ -8,27 +8,19 @@
 
 <font face="courier new" color="blue" size=3>FinFuncion</font>
 
-<br>
-
 <font face="courier new" color="blue" size=3>Algoritmo </font><font face="courier new" size=3>funct</font>
 
 <font face="courier new" size=3>&nbsp;&nbsp;nombre(n1, n2)</font>
 
 <font face="courier new" color="blue" size=3>FinAlgoritmo</font>
 
-<br>
-<br>
-
 <font face="courier new" color="grey" size=3>//Ejemplo</font>
-
 
 <font face="courier new" color="blue" size=3>Funcion </font><font face="courier new" size=3>operacion = suma(n1, n2)</font>
 
 <font face="courier new" size=3>&nbsp;&nbsp;operacion = n1 + n2</font>
 
 <font face="courier new" color="blue" size=3>FinFuncion</font>
-
-<br>
 
 <font face="courier new" color="blue" size=3>Algoritmo </font><font face="courier new" size=3>funct</font>
 

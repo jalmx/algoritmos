@@ -1,5 +1,5 @@
-## Bucle Mientras
-<br>
+# Bucle Mientras
+
 <font face="courier new" color="grey" size=3>//Estructura</font>
 
 <font face="courier new" color="blue" size=3>Mientras </font><font face="courier new" size=3>expresion_logica </font><font face="courier new" color="blue" size=3>Hacer</font>
@@ -8,8 +8,8 @@
 
 <font face="courier new" color="blue" size=3>FinMientras</font>
 
-<br>
-<br>
+
+
 
 <font face="courier new" color="grey" size=3>//Ejemplo</font>
 

@@ -32,7 +32,7 @@
 
 ## Condicionales
 
-[IF](01_if.md)
+[IF](02_if.md)
 
 [Switch Case](03_switch_case.md)
 

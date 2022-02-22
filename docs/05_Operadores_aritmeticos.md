@@ -7,23 +7,23 @@ author: Alejandro Leyva
 
 # Operadores aritméticos
 
-En esta sección veremos los operadores arítmeticos basicos que podemos encontrar en la mayoria de lenguajes.
+En esta sección veremos los operadores aritméticos básicos que podemos encontrar en la mayoria de lenguajes.
 
 Nombre | Símbolo | Descripción
 :-|:-:|:-
-Suma| + | Realiza la operación de suma arítmetica
-Resta| - | Realiza la operación de resta arítmetica
-Multiplicación| * | Realiza la operación de multiplicación arítmetica
-División| / | Realiza la operación de razón arítmetica
-Residuo o Módulo| % | Realiza la operación de división arítmetica y devuelve el residuo de ésta división
+Suma| + | Realiza la operación de suma aritmética
+Resta| - | Realiza la operación de resta aritmética
+Multiplicación| * | Realiza la operación de multiplicación aritmética
+División| / | Realiza la operación de razón aritmética
+Residuo o Módulo| % | Realiza la operación de división aritmética y devuelve el residuo de ésta división
 
-*Cuando somos nuevos en el mundo de la programación queremos aplicar conocimiento que tenemos con relación a matemáticass, aquí existen algunas cuestiones que no se aplican de la misma manera o solo se puede aplicar de cierta forma.*
+*Cuando somos nuevos en el mundo de la programación queremos aplicar conocimiento que tenemos con relación a matemáticas, aquí existen algunas cuestiones que no se aplican de la misma manera o solo se puede aplicar de cierta forma.*
 
 *Precauciones que debemos tener en cuenta son:*
 
-- El unico símbolo que podemos ocupar para la **divisón** es la diagonal o slash (/), no existe otro símbolo ni tampoco se puede ocupar los tradicionales que conocemos.
-- El unico símbolo para **multiplicación** es el asterisco (\*), no existe algun otro ni ninguno más sirve para multiplicar.
-- **Los parentesís** "( )" solo agrupan y nada mas. **No sirven para multiplicar**. 
+- El único símbolo que podemos ocupar para la **división** es la diagonal o slash (/), no existe otro símbolo ni tampoco se puede ocupar los tradicionales que conocemos.
+- El único símbolo para **multiplicación** es el asterisco (\*), no existe algun otro ni ninguno más sirve para multiplicar.
+- **Los paréntesis** "( )" solo agrupan y nada mas. **No sirven para multiplicar**. 
 
 ## Ejemplos:
 
@@ -33,11 +33,11 @@ Como ya sabemos debemos comenzar con nuestro símbolo de *INICIO*, posteriorment
 
 ![inicio](./img/e3_p2.png)
 
-Después de mandar el mensaje, debemos recibir y almacenar ese valor. Por lo tanto, usamo el símbolo de ingreso de datos y lo tenemos que almacenar en una variable. Esta variable la llamaremos `numero1`.
+Después de mandar el mensaje, debemos recibir y almacenar ese valor. Por lo tanto, usamos el símbolo de ingreso de datos y lo tenemos que almacenar en una variable. Esta variable la llamaremos `numero1`.
 
 ![paso2](./img/e3_p3.png)
 
-Una vez que ya tenemos el primer valor almacenado en memoria, vamos a mandar otro mensaje indicandole al usuario qué debe realizar. El mensaje será `"Dar el segundo valor a multiplciar"`
+Una vez que ya tenemos el primer valor almacenado en memoria, vamos a mandar otro mensaje indicándole al usuario qué debe realizar. El mensaje será `"Dar el segundo valor a multiplciar"`
 
 ![paso2](./img/e3_p4.png)
 
@@ -59,22 +59,22 @@ Hemos terminado todas las acciones que ibas a realizar, solo nos queda terminar 
 
 ## Precedencia de operadores
 
-*La precedencia de operadores funciona practicamente igual que en matemáticas.* Recordemos que solo existen 5 operaciones aritméticas básicas en la programacion (*Nota: En concreto por leguaje puede variar*). 
+*La precedencia de operadores funciona prácticamente igual que en matemáticas.* Recordemos que solo existen 5 operaciones aritméticas básicas en la programación (*Nota: En concreto por lenguaje puede variar*). 
 
-Órden|Operación| Símbolo| Descripción
+Orden|Operación| Símbolo| Descripción
 :-:|:-|:-:|:-
-1|Agrupación| ( ) | Los parentesis solo realizan la operación de agrupar (no arítmetica), la operación que esta en los parentesis mas profundos son las primeras que se realizan
+1|Agrupación| ( ) | Los paréntesis solo realizan la operación de agrupar (no aritmética), la operación que esta en los paréntesis mas profundos son las primeras que se realizan
 2|Residuo|%| Obtiene el residuo de una división
-3|División|/| Realiza una división arítmetica
-4|Multiplicación|\*| Realiza una multiplicación arítmetica
-5|Suma|+| Realiza una suma arítmetica
-6|Resta|-| Realiza una resta arítmetica
+3|División|/| Realiza una división aritmética
+4|Multiplicación|\*| Realiza una multiplicación aritmética
+5|Suma|+| Realiza una suma aritmética
+6|Resta|-| Realiza una resta aritmética
 
-Vamos a hacer una comparativa en la forma matemáticas convencional y como se realiza en diagramas de flujo o programación (esto aplica practicamente a cualquier lenguaje)
+Vamos a hacer una comparativa en la forma matemáticas convencional y como se realiza en diagramas de flujo o programación (esto aplica prácticamente a cualquier lenguaje)
 
 ## Ejemplos
 
-|Matemáticas | Programación|
+|matemáticas | Programación|
 |-|:-:|
 |$$4+3$$|**4 + 3**|
 |$$10-3$$|**10 - 3**|
@@ -87,15 +87,13 @@ Vamos a hacer una comparativa en la forma matemáticas convencional y como se re
 
 ## Ejercicios 
 
-Transformar las siguientes expresiones matemáticass a una representación de digrama de flujo.
+Transformar las siguientes expresiones matemáticas a una representación de diagrama de flujo.
 
-matemáticass | Programación
--|- 
-$$x + y$$| 
-$$\frac{4 - 2}{5}$$| 
-$$3 + \frac{4}{8}$$| 
-$$6 + 4 \times \frac{3}{9}$$| 
-$$\frac{3}{7} + \frac{8}{3}$$| 
+|matemáticas | Programación|
+|-|-|
+|$$x + y$$| 
+|$$\frac{4 - 2}{5}$$| 
+|$$3 + \frac{4}{8}$$| 
+|$$6 + 4 \times \frac{3}{9}$$| 
+|$$\frac{3}{7} + \frac{8}{3}$$| 
 
-<!-- text autogenerated-->
-<blockquote style="" ><p><a href="./05_Operadores_aritmeticos.pdf" target="_blank">Descargar esta página en PDF</a></p> </blockquote>

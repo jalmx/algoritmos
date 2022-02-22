@@ -1,5 +1,5 @@
-## Bucle Repetir
-<br>
+# Bucle Repetir
+
 <font face="courier new" color="grey" size=3>//Estructura</font>
 
 <font face="courier new" color="blue" size=3>Repetir </font>
@@ -7,9 +7,6 @@
 <font face="courier new" size=3>&nbsp;&nbsp;secuencia_acciones </font>
 
 <font face="courier new" color="blue" size=3>Hasta Que </font><font face="courier new" size=3>expresion_logica</font>
-
-<br>
-<br>
 
 <font face="courier new" color="grey" size=3>//Ejemplo</font>
 
