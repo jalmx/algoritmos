@@ -2,5 +2,4 @@ mkdocs==1.2.3
 mkdocs-markmap==2.2.0
 mkdocs-material==7.3.6
 mkdocs-material-extensions==1.0.3
-mkdocs-pdf-export-plugin==0.5.10
 mkdocs-plugin-tags==1.0.2

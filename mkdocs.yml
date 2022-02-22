@@ -34,4 +34,3 @@ extra_javascript:
 plugins:
   - tags
   - markmap
-  - pdf-export

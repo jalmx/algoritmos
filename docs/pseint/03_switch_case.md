@@ -1,0 +1,68 @@
+## Switch Case
+<br>
+<font face="courier new" color="grey" size=3>//Estructura</font>
+
+<font face="courier new" color="blue" size=3>Segun </font><font face="courier new" size=3>variable </font><font face="courier new" color="blue" size=3>Hacer</font>
+
+<font face="courier new" color="orange" size=3>&nbsp;opcion_1:</font>
+
+<font face="courier new" size=3>&nbsp;&nbsp;secuencia_de_acciones1</font>
+
+<font face="courier new" color="orange" size=3>&nbsp;opcion_2</font>
+
+<font face="courier new" size=3>&nbsp;&nbsp;secuencia_de_acciones2</font>
+
+<font face="courier new" color="orange" size=3>&nbsp;opcion_3:</font>
+
+<font face="courier new" size=3>&nbsp;&nbsp;secuencia_de_acciones3</font>
+
+<font face="courier new" color="grey" size=3>&nbsp;//Se pueden poner cuantas opciones quieras</font>
+
+<font face="courier new" color="blue" size=3>De otro modo</font>
+
+<font face="courier new" size=3>&nbsp;secuencia_de_otro_modo</font>
+
+<font face="courier new" color="blue" size=3>FinSegun</font>
+
+<br>
+<br>
+
+<font face="courier new" color="grey" size=3>//Ejemplo</font>
+
+<font face="courier new" color="blue" size=3>Algoritmo </font><font face="courier new" size=3> ejemplo</font>
+
+
+<font face="courier new" color="blue" size=3>Imprimir </font><font face="courier new" color="green" size=3> "Dame un numero de los que aparecen abajo:"</font>
+
+<font face="courier new" color="blue" size=3>Imprimir </font><font face="courier new" color="green" size=3> "1"</font>
+
+<font face="courier new" color="blue" size=3>Imprimir </font><font face="courier new" color="green" size=3>"2"</font>
+
+<font face="courier new" color="blue" size=3>Imprimir </font><font face="courier new" color="green" size=3> "3"</font>
+
+<font face="courier new" color="blue" size=3>Leer </font><font face="courier new" size=3> num</font>
+
+<br>
+<font face="courier new" color="blue" size=3>Segun </font><font face="courier new" size=3>num </font><font face="courier new" color="blue" size=3>Hacer</font>
+
+<font face="courier new" color="orange" size=3>&nbsp;1:</font>
+
+<font face="courier new" color="blue" size=3>&nbsp; &nbsp;Imprimir </font><font face="courier new" color="green" size=3>"1, 1, 1"</font>
+
+<font face="courier new" color="orange" size=3>&nbsp;2:</font>
+
+<font face="courier new" color="blue" size=3>&nbsp; &nbsp;Imprimir </font><font face="courier new" color="green" size=3>"2, 2, 2"</font>
+
+<font face="courier new" color="orange" size=3>&nbsp;3:</font>
+
+<font face="courier new" color="blue" size=3>&nbsp; &nbsp;Imprimir </font><font face="courier new" color="green" size=3>"3, 3, 3"</font>
+
+<font face="courier new" color="blue" size=3>De otro modo</font>
+
+<font face="courier new" color="blue" size=3>&nbsp; &nbsp;Imprimir </font><font face="courier new" color="green" size=3>"Esa opcion no esta disponible"</font>
+
+<font face="courier new" color="blue" size=3>FinSegun</font>
+
+<font face="courier new" color="blue" size=3>FinAlgoritmo</font>
+
+<p align="right"><font face="courier new"> aporteDe = "Rafael A. Beltran Santos"</p>
