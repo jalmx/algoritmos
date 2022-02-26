@@ -1,4 +1,4 @@
-# Introduction a creación de Diagramas de flujo
+# Introducción a creación de Diagramas de flujo
 
 Aquí comenzaremos a construir diagramas de flujo básicos. Construidos parte por parte.
 

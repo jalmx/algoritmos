@@ -52,7 +52,7 @@ La forma en la que se escriben las comparaciones con operadores lógicos es:
 |`(10 <= x)`|`&&`|`(1 != -8)`
 |`(a <= 2)`|`||`|`(0 == 8)`
 
-En el caso de `not` aplica solo a una comparacion:
+En el caso de `not` aplica solo a una comparación:
 
 |Aplicación | Resultado
 |:-:|:-:|  
