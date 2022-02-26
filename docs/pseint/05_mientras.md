@@ -1,4 +1,4 @@
-# Bucle Mientras
+# Bucle Mientras (while)
 
 <font face="courier new" color="grey" size=3>//Estructura</font>
 
@@ -7,9 +7,6 @@
 <font face="courier new" size=3>&nbsp;&nbsp;secuencia_acciones </font>
 
 <font face="courier new" color="blue" size=3>FinMientras</font>
-
-
-
 
 <font face="courier new" color="grey" size=3>//Ejemplo</font>
 

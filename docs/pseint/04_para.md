@@ -1,4 +1,4 @@
-# Bucle Para
+# Bucle Para (for)
 
 <font face="courier new" color="grey" size=3>//Estructura</font>
 

@@ -1,4 +1,4 @@
-# Funcion Sin Retorno
+# Función Sin Retorno
 
 <font face="courier new" color="grey" size=3>//Estructura</font>
 

@@ -1,4 +1,4 @@
-# Bucle Repetir
+# Bucle Repetir (do-while)
 
 <font face="courier new" color="grey" size=3>//Estructura</font>
 

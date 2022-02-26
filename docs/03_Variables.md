@@ -24,10 +24,10 @@ Dentro de la programación existen **buenas practicas** para declarar variables.
 - Sensibles a minúsculas y mayúsculas; es decir, si declaro una variable llamada `variable1` y otra llamada `Variable1`, para la computadora son variables o espacios de memoria distintos, aun que suenen igual, con el solo hecho de cambiar una letra, ya estamos hablando de una variable distinta.
 - No pueden contener espacios entre letras o palabras
 - No puede comenzar con números o símbolos
-- No puede contener carácteres especiales, todos son caracteres especiales menos el abecedario ingles. Ejemplo: `!"·%&-+/()=?¿...`, los únicos símbolos permitidos son `$` y `_`.
+- No puede contener caracteres especiales, todos son caracteres especiales menos el abecedario ingles. Ejemplo: `!"·%&-+/()=?¿...`, los únicos símbolos permitidos son `$` y `_`.
 - **El nombre debe ser descriptivo**; es decir, con solo leerlo podemos deducir qué hace o para qué fue declarada
 - *(Regla especial):* Todo de escribe en ingles.
-- *(Regla especial)*: Si se desea escribir una variable combinando dos palabras o más, se separarán con un guión bajo, se aplica la convención CamelCase, es decir, en lugar de usar el espacio la palabra debe continuar con letra mayúscula.
+- *(Regla especial)*: Si se desea escribir una variable combinando dos palabras o más, se separarán con un guión bajo, se aplica la convención `CamelCase`, es decir, en lugar de usar el espacio la palabra debe continuar con letra mayúscula.
 - Ejemplos:
     - `valor`
     - `valor1`

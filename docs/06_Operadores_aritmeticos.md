@@ -61,14 +61,14 @@ Hemos terminado todas las acciones que ibas a realizar, solo nos queda terminar 
 
 *La precedencia de operadores funciona prácticamente igual que en matemáticas.* Recordemos que solo existen 5 operaciones aritméticas básicas en la programación (*Nota: En concreto por lenguaje puede variar*). 
 
-Orden|Operación| Símbolo| Descripción
-:-:|:-|:-:|:-
-1|Agrupación| ( ) | Los paréntesis solo realizan la operación de agrupar (no aritmética), la operación que esta en los paréntesis mas profundos son las primeras que se realizan
-2|Residuo|%| Obtiene el residuo de una división
-3|División|/| Realiza una división aritmética
-4|Multiplicación|\*| Realiza una multiplicación aritmética
-5|Suma|+| Realiza una suma aritmética
-6|Resta|-| Realiza una resta aritmética
+|Orden|Operación| Símbolo| Descripción
+|:-:|:-|:-:|:-
+|1|Agrupación| ( ) | Los paréntesis solo realizan la operación de agrupar (no aritmética), la operación que esta en los paréntesis mas profundos son las primeras que se realizan
+|2|Residuo|%| Obtiene el residuo de una división
+|3|División|/| Realiza una división aritmética
+|4|Multiplicación|\*| Realiza una multiplicación aritmética
+|5|Suma|+| Realiza una suma aritmética
+|6|Resta|-| Realiza una resta aritmética
 
 Vamos a hacer una comparativa en la forma matemáticas convencional y como se realiza en diagramas de flujo o programación (esto aplica prácticamente a cualquier lenguaje)
 
@@ -80,8 +80,8 @@ Vamos a hacer una comparativa en la forma matemáticas convencional y como se re
 |$$10-3$$|**10 - 3**|
 |$$5\times 5$$| **5 \* 5**|
 |$$\frac{3}{2}$$| **2 / 3**|
-|$$ \frac{2 + 4}{6}$$| **( 2 + 4 ) / 6**|
-|$$ 2 +  \frac{4}{3}$$| **2 + ( 4 / 3 )**|
+|$$\frac{2 + 4}{6}$$| **( 2 + 4 ) / 6**|
+|$$2 +  \frac{4}{3}$$| **2 + ( 4 / 3 )**|
 |$$\frac{x+y+z}{w}$$| **( x  + y + z ) / w**|
 |$$x ^2$$| **x \* x**|
 

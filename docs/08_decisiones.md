@@ -1,0 +1,16 @@
+# Comparaciones o Decisiones (*if*)
+
+Una comparación me ayuda a poder cambiar una ruta o indicar hacer otra tarea con base a una comparación, con ello podemos hacer mas diverso y variante nuestro algoritmo, puesto no todo es estático y podemos hacer nuestro programa dinámico.
+
+Dentro de una comparación se realiza una pregunta, la cual las únicas respuestas puede ser `si` o `no`, *no existe otra respuesta*; por lo tanto, debemos pensar como sera la pregunta para obtener la respuesta que necesitamos y con ello moderar el flujo o el avance del algoritmo.
+
+![decision1](img/desicion_1.png)
+<figcaption>Decision básica</figcaption>
+
+
+Las preguntas pueden estar anidadas, es decir, pueden ser consecutivas hasta que alguna coincida, no es necesario que coincida con alguna.
+
+
+![decision2](img/desicion_2.png)
+<figcaption>Decisiones anidadas</figcaption>
+

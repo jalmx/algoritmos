@@ -2,7 +2,7 @@
 
 Aquí comenzaremos a construir diagramas de flujo básicos. Construidos parte por parte.
 
-!!! example
+!!! example "Ejemplo"
     **1. Se debe realizar un diagrama de flujo que sume 2 números enteros, estos números deben estar almacenados en memoria; es decir, en variables. El resultado enviarlo a la pantalla.**
 
 Con base a las instrucciones, entendemos que los valores pueden ser cuales quiera, deben estar almacenados en el programa.
@@ -11,7 +11,7 @@ Primero debemos comenzar con el símbolo de *INICIO*
 
 ![part1](./img/e1_p0.png)
 
-Tomando las instrucciones nos dice que debemos tomar definir un valor, el que nosotros querramos, en memoria para sumarlo con otro, por lo tanto, aplicamos un proceso declarando la primera variable `variable1` y le asignamos un valor; en esta caso le asignamos el valor de `10`. El símbolo de `Proceso` (Rectángulo) se usa para realizar una operación matematica, asignación de valor a una variable o declaración de una variable.
+Tomando las instrucciones nos dice que debemos tomar definir un valor, el que nosotros querramos, en memoria para sumarlo con otro, por lo tanto, aplicamos un proceso declarando la primera variable `variable1` y le asignamos un valor; en esta caso le asignamos el valor de `10`. El símbolo de `Proceso` (Rectángulo) se usa para realizar una operación matemática, asignación de valor a una variable o declaración de una variable.
 
 *Se utiliza el signo de igual (=) para asignación de un valor a una variable.*
 
@@ -22,7 +22,7 @@ A nuestra variable `variable2` le asignamos el valor de `5`. Como estamos realiz
 
 ![part1](./img/e1_p2.png)
 
-Acto seguido es realizar la operación aritmetica de suma. Para ello esto lo realizamos en un `Proceso` y lo guardamos en una variable llamada `suma`.
+Acto seguido es realizar la operación aritmética de suma. Para ello esto lo realizamos en un `Proceso` y lo guardamos en una variable llamada `suma`.
 
 ![suma](./img/e1_p3.png)
 
@@ -34,7 +34,7 @@ Hemos terminado de realizar lo solicitado, por lo tanto, debemos terminar nuestr
 
 ![resultado](./img/e1_p5.png)
 
-!!! example
+!!! example "Ejemplo"
     **2. Realizar la suma de dos números enteros, solicitándolos al usuario y al final imprimir por pantalla el resultado.**
 
 Con base a las instrucciones debemos solicitar al usuario los números, pero primero le tenemos que indicar que debe hacer, y debemos guardar este valor en una variable cada uno para poder realizar la operación correspondiente.
@@ -47,7 +47,7 @@ Tenemos que indicarle al usuario qué debe realizar, para realizar esto debemos 
 
 ![inicio](./img/e2_p2.png)
 
-Ahora debemos recibir el dato que el usuario quiere ingresar, este numero lo debemos guardar en algun lado, por lo tanto, declaramos una variable dentro del símbolo que es para ingresar datos. La variable la llamamos `variable1`
+Ahora debemos recibir el dato que el usuario quiere ingresar, este numero lo debemos guardar en algún lado, por lo tanto, declaramos una variable dentro del símbolo que es para ingresar datos. La variable la llamamos `variable1`
 
 ![inicio](./img/e2_p3.png)
 

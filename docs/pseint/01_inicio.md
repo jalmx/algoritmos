@@ -1,4 +1,4 @@
-# Comandos de PSEINT
+# Introducción a [PSEINT](http://pseint.sourceforge.net)
 
 ## Comando de salida a la pantalla
 
@@ -10,7 +10,7 @@
 
 <br>
 
-## Comando para definir el dato de una variable
+## Sintaxis para declarar un variable y su tipo
 
 <font face="courier new" color="blue" size=3>Definir </font><font face="courier new" size=3>variable </font><font face="courier new" color="blue" size=3>como Char</font> 
 
@@ -22,7 +22,7 @@
 
 <br>
 
-## Como guardar una variable?
+## ¿Cómo asignar un valor a una variable?
 
 <font face="courier new" size=3>variable = dato</font><font face="courier new" size=3 color="grey"> //Este forma es la que utilizaremos</font>
 
