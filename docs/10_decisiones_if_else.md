@@ -21,7 +21,7 @@ Las preguntas pueden estar anidadas, es decir, después de la pregunta puede hab
     
     **Pseudocódigo**
 
-    ```java
+    ```python
     Algoritmo MenorMayorEdad
         Imprimir "Dar la edad"
         Leer edad
@@ -43,7 +43,7 @@ Las preguntas pueden estar anidadas, es decir, después de la pregunta puede hab
     
     **Pseudocódigo**
 
-    ```java
+    ```python
     Algoritmo ParImpar
         Escribir 'Dar un numero para conocer si es par o impar'
         Leer numero
@@ -64,7 +64,7 @@ Las preguntas pueden estar anidadas, es decir, después de la pregunta puede hab
 
     **Pseudocódigo**
 
-    ```java
+    ```python
     Algoritmo CalculadoraRectangulo
         Escribir 'Calculadora de Area o Perimetro del Rectangulo'
         Escribir '1) Area'

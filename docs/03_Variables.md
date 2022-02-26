@@ -8,6 +8,18 @@ Desde el punto de vista matemático es un referencia o un nombre para un valor q
 
 Entonces, que es al final, es una combinación de ambas definiciones, es un espacio en memoria que puede almacenar un dato o datos, dependiendo del tipo de variable o el tamaño de la variable.
 
+> Es un espacio virtual el cual quedará registrado en la memoria; el cual se podrá llamar en diferentes puntos de la programación cuantas veces la necesitemos. A este espacio se le da un nombre que nos indique para qué ha sido creada. Las variables pueden tomar cualquier tipo de valor
+
+!!! example "Variables"
+
+    ```python
+    edad = 20 //Variable que almacena un numero, la edad
+    nombre = "Diana" //Variable que almacena un nombre (String)
+    nombre = "Aprendiendo programación" //Variable que almacena una frase (String)
+    isAlive = true //Variable que almacena un valor booleano
+    ```
+
+
 ## Qué es declarar una variable?
 
 **La declaración de una variable es reservar un espacio en memoria de la computadora**.

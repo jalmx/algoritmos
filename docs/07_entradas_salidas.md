@@ -1,1 +1,24 @@
 # Entradas y salidas
+
+Dentro de todo algoritmo tendremos salidas y entrada de datos, en este caso el ingresar información es correspondiente a un numero, letra o conjunto de caracteres (String). Para mandar el resultado de lo que estemos realizando tendremos que usar una salida.
+
+## Entrada (Input)
+
+La entrada de datos o de información lo haremos con los símbolos siguiente:
+
+Símbolo |Nombre
+-|-
+![input/output](./img/4.jpg) | Entrada/Salida (Tiene 2 funciones)
+
+
+
+## Salida (Output)
+
+La salida de información es muy variada, dado que el contexto de la aplicación o el algoritmo puede tomar una u otro. Lo que nos atañe es que al final sigue siendo una salida de información por algún medio ya sea físico o digital.
+
+Símbolo |Nombre
+-|:-:
+![display](./img/6.jpg) | Salida a pantalla (Display)
+![input/output](./img/4.jpg) | Entrada/Salida (Tiene 2 funciones)
+![documento](./img/8.jpg)| Salida a documento (impresión en hoja)
+

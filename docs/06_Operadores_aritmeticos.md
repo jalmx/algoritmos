@@ -63,7 +63,7 @@ Hemos terminado todas las acciones que ibas a realizar, solo nos queda terminar 
 
 |Orden|Operación| Símbolo| Descripción
 |:-:|:-|:-:|:-
-|1|Agrupación| ( ) | Los paréntesis solo realizan la operación de agrupar (no aritmética), la operación que esta en los paréntesis mas profundos son las primeras que se realizan
+|1|Agrupación| ( ) | Los paréntesis solo realizan la operación de agrupar (no operación aritmética), la operación que esta en los paréntesis mas profundos son las primeras que se realizan
 |2|Residuo|%| Obtiene el residuo de una división
 |3|División|/| Realiza una división aritmética
 |4|Multiplicación|\*| Realiza una multiplicación aritmética
@@ -75,25 +75,25 @@ Vamos a hacer una comparativa en la forma matemáticas convencional y como se re
 ## Ejemplos
 
 |matemáticas | Programación|
-|-|:-:|
-|$$4+3$$|**4 + 3**|
-|$$10-3$$|**10 - 3**|
-|$$5\times 5$$| **5 \* 5**|
-|$$\frac{3}{2}$$| **2 / 3**|
-|$$\frac{2 + 4}{6}$$| **( 2 + 4 ) / 6**|
-|$$2 +  \frac{4}{3}$$| **2 + ( 4 / 3 )**|
-|$$\frac{x+y+z}{w}$$| **( x  + y + z ) / w**|
-|$$x ^2$$| **x \* x**|
+|:-:|:-:|
+|$4+3$|**4 + 3**|
+|$10-3$|**10 - 3**|
+|$5\times 5$| **5 \* 5**|
+|$\frac{3}{2}$| **2 / 3**|
+|$\frac{2 + 4}{6}$| **( 2 + 4 ) / 6**|
+|$2 +  \frac{4}{3}$| **2 + ( 4 / 3 )**|
+|$\frac{x+y+z}{w}$| **( x  + y + z ) / w**|
+|$x ^2$| **x \* x**|
 
 ## Ejercicios 
 
 Transformar las siguientes expresiones matemáticas a una representación de diagrama de flujo.
 
 |matemáticas | Programación|
-|-|-|
-|$$x + y$$| 
-|$$\frac{4 - 2}{5}$$| 
-|$$3 + \frac{4}{8}$$| 
-|$$6 + 4 \times \frac{3}{9}$$| 
-|$$\frac{3}{7} + \frac{8}{3}$$| 
+|:-:|-|
+|$x + y$| 
+|$\frac{4 - 2}{5}$| 
+|$3 + \frac{4}{8}$| 
+|$6 + 4 \times \frac{3}{9}$| 
+|$\frac{3}{7} + \frac{8}{3}$| 
 

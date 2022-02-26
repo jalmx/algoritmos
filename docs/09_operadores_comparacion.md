@@ -4,14 +4,14 @@ Los operadores de relación te dan unicamente dos respuesta (*lógicas*) `si` o 
 
 |Nombre|Matemáticas|Algoritmos (Programación)
 |-|:-:|:-:|
-|`Menor que`|<| <
-|`Menor o igual que`|≤|<=
-|`Mayor que`|>| >
-|`Mayor o igual que`|≥| >=
-|`Igual que`|=| ==
-|`Diferente que`|≠| != 
+|`Menor que`|`<`| `<`
+|`Menor o igual que`|`≤`|`<=`
+|`Mayor que`|`>`| `>`
+|`Mayor o igual que`|`≥`| `>=`
+|`Igual que`|`=`| `==`
+|`Diferente que`|`≠`| `!=` 
 
-> **Nota:** El *diferente de* puede variar por lenguaje
+> **Nota:** El `diferente de` puede variar por lenguaje
 
 ## Sintaxis de comparación
 
@@ -64,7 +64,7 @@ En  este caso las variables tienen este valor:
     
     **Pseudocódigo**
 
-    ```java
+    ```python
     Algoritmo MenorMayorEdad
         Imprimir "Dar la edad"
         Leer edad
@@ -89,7 +89,7 @@ En  este caso las variables tienen este valor:
     
     **Pseudocódigo**
 
-    ```java
+    ```python
     Algoritmo ParImpar
         Escribir 'Dar un numero para conocer si es par o impar'
         Leer numero
@@ -97,7 +97,7 @@ En  este caso las variables tienen este valor:
             Escribir 'El numero es par'
         FinSi
         
-        Si numero % 2 <> 0 Entonces
+        Si numero % 2 != 0 Entonces
             Escribir 'El numero es impar'
         FinSi
     FinAlgoritmo
@@ -114,7 +114,7 @@ En  este caso las variables tienen este valor:
 
     **Pseudocódigo**
 
-    ```java
+    ```python
     Algoritmo CalculadoraRectangulo
         Escribir 'Calculadora de Area o Perimetro del Rectangulo'
         Escribir '1) Area'
@@ -145,4 +145,4 @@ En  este caso las variables tienen este valor:
 
     ![diagrama](img/ej_comparacion_3.png)    
 
-> Nota: No es la única forma en la que se pueden realizar estos ejercicios, recuerda que lo importante es resolver el problema, que hayan mas o menos pasos, diferentes formulas, etc, no significa que este mal.
+> ***Nota**: No es la única forma en la que se pueden realizar estos ejercicios, recuerda que lo importante es resolver el problema, que hayan mas o menos pasos, diferentes formulas, etc, no significa que este mal*.

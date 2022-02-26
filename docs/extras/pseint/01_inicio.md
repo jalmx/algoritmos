@@ -1,4 +1,4 @@
-# Introducción a [PSEINT](http://pseint.sourceforge.net)
+# Introducción a PSEINT
 
 ## Comando de salida a la pantalla
 
@@ -26,7 +26,7 @@
 
 <font face="courier new" size=3>variable = dato</font><font face="courier new" size=3 color="grey"> //Este forma es la que utilizaremos</font>
 
-<font face="courier new" size=3>variable <- dato</font>
+<font face="courier new" size=3>variable = dato</font>
 
 <br>
 
