@@ -8,13 +8,15 @@
       
       
       
+        <meta name="author" content="Alejandro Leyva">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>Variables - Algoritmos</title>
+        <title>Operadores aritméticos - Algoritmos</title>
       
     
     
@@ -61,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#variables" class="md-skip">
+        <a href="#operadores-aritmeticos" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Variables
+              Operadores aritméticos
             
           </span>
         </div>
@@ -204,67 +206,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Variables
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../03_Variables/" class="md-nav__link">
         Variables
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-una-variable" class="md-nav__link">
-    Que es una variable?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-declarar-una-variable" class="md-nav__link">
-    Qué es declarar una variable?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-nombrar-una-variable" class="md-nav__link">
-    Cómo nombrar una variable?
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -305,11 +251,74 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../06_Operadores_aritmeticos/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Operadores aritméticos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Operadores aritméticos
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    Ejemplos:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#precedencia-de-operadores" class="md-nav__link">
+    Precedencia de operadores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos_1" class="md-nav__link">
+    Ejemplos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    Ejercicios
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -623,22 +632,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-una-variable" class="md-nav__link">
-    Que es una variable?
+  <a href="#ejemplos" class="md-nav__link">
+    Ejemplos:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#que-es-declarar-una-variable" class="md-nav__link">
-    Qué es declarar una variable?
+  <a href="#precedencia-de-operadores" class="md-nav__link">
+    Precedencia de operadores
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-nombrar-una-variable" class="md-nav__link">
-    Cómo nombrar una variable?
+  <a href="#ejemplos_1" class="md-nav__link">
+    Ejemplos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    Ejercicios
   </a>
   
 </li>
@@ -656,40 +672,196 @@
               
                 
                 
-                <h1 id="variables">Variables</h1>
-<h2 id="que-es-una-variable">Que es una variable?</h2>
-<p>Una variable desde el punto de vista computacional, es un espacio en memoria. </p>
-<p>Desde el punto de vista matemático es un referencia o un nombre para un valor que desconocemos y puede tomar cualquier valor.</p>
-<p>Entonces, que es al final, es una combinación de ambas definiciones, es un espacio en memoria que puede almacenar un dato o datos, dependiendo del tipo de variable o el tamaño de la variable.</p>
-<h2 id="que-es-declarar-una-variable">Qué es declarar una variable?</h2>
-<p><strong>La declaración de una variable es reservar un espacio en memoria de la computadora</strong>.
-La computadora tiene cierta cantidad de memoria, la cual es repartida entre todos los programas y los propios procesos para ejecutar el sistema operativo. Cuando ejecutamos un programa, éste comienza reservar memoria para poder trabajar.
-Entonces, al declarar variables estamos consumiendo memoria, la cual vamos a utilizar en algún momento, si estamos reservando el espacio significa que en algún otro momento necesitamos recuperar lo que hemos guardado para realizar otra operación, de lo contrario no necesitamos reservar memoria si el valor solo será utilizado una única vez.</p>
-<h2 id="como-nombrar-una-variable">Cómo nombrar una variable?</h2>
-<p>Dentro de la programación existen <strong>buenas practicas</strong> para declarar variables. Estas reglas se definen a lo largo del tiempo que ha evolucionado. Estas son las reglas genéricas para (casi) todos lenguajes. </p>
+                <p><img alt="banner micro" src="https://www.alejandro-leyva.com/micro-21/web/imgs/banner.png"/></p>
+<h1 id="operadores-aritmeticos">Operadores aritméticos</h1>
+<p>En esta sección veremos los operadores aritméticos básicos que podemos encontrar en la mayoria de lenguajes.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Nombre</th>
+<th align="center">Símbolo</th>
+<th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Suma</td>
+<td align="center">+</td>
+<td align="left">Realiza la operación de suma aritmética</td>
+</tr>
+<tr>
+<td align="left">Resta</td>
+<td align="center">-</td>
+<td align="left">Realiza la operación de resta aritmética</td>
+</tr>
+<tr>
+<td align="left">Multiplicación</td>
+<td align="center">*</td>
+<td align="left">Realiza la operación de multiplicación aritmética</td>
+</tr>
+<tr>
+<td align="left">División</td>
+<td align="center">/</td>
+<td align="left">Realiza la operación de razón aritmética</td>
+</tr>
+<tr>
+<td align="left">Residuo o Módulo</td>
+<td align="center">%</td>
+<td align="left">Realiza la operación de división aritmética y devuelve el residuo de ésta división</td>
+</tr>
+</tbody>
+</table>
+<p><em>Cuando somos nuevos en el mundo de la programación queremos aplicar conocimiento que tenemos con relación a matemáticas, aquí existen algunas cuestiones que no se aplican de la misma manera o solo se puede aplicar de cierta forma.</em></p>
+<p><em>Precauciones que debemos tener en cuenta son:</em></p>
 <ul>
-<li>Deben comenzar en minúscula</li>
-<li>Se escriben en minúsculas, las variantes se dan cuando son más de dos palabras.</li>
-<li>Solo puede contener números al final.</li>
-<li>Sensibles a minúsculas y mayúsculas; es decir, si declaro una variable llamada <code>variable1</code> y otra llamada <code>Variable1</code>, para la computadora son variables o espacios de memoria distintos, aun que suenen igual, con el solo hecho de cambiar una letra, ya estamos hablando de una variable distinta.</li>
-<li>No pueden contener espacios entre letras o palabras</li>
-<li>No puede comenzar con números o símbolos</li>
-<li>No puede contener caracteres especiales, todos son caracteres especiales menos el abecedario ingles. Ejemplo: <code>!"·%&amp;-+/()=?¿...</code>, los únicos símbolos permitidos son <code>$</code> y <code>_</code>.</li>
-<li><strong>El nombre debe ser descriptivo</strong>; es decir, con solo leerlo podemos deducir qué hace o para qué fue declarada</li>
-<li><em>(Regla especial):</em> Todo de escribe en ingles.</li>
-<li><em>(Regla especial)</em>: Si se desea escribir una variable combinando dos palabras o más, se separarán con un guión bajo, se aplica la convención <code>CamelCase</code>, es decir, en lugar de usar el espacio la palabra debe continuar con letra mayúscula.</li>
-<li>Ejemplos:<ul>
-<li><code>valor</code></li>
-<li><code>valor1</code></li>
-<li><code>valorUno</code></li>
-<li><code>variableNueva</code></li>
+<li>El único símbolo que podemos ocupar para la <strong>división</strong> es la diagonal o slash (/), no existe otro símbolo ni tampoco se puede ocupar los tradicionales que conocemos.</li>
+<li>El único símbolo para <strong>multiplicación</strong> es el asterisco (*), no existe algun otro ni ninguno más sirve para multiplicar.</li>
+<li><strong>Los paréntesis</strong> "( )" solo agrupan y nada mas. <strong>No sirven para multiplicar</strong>. </li>
 </ul>
-</li>
-</ul>
-<p>Las convenciones de Camel Case y Snake Case no las menciona por el momento, porque aplican en función de un lenguaje en concreto, hasta el momento esto aplicará para diagramas de flujo, lo cual es algo genérico y base.</p>
-<!-- text autogenerated footer -->
-<p>Facebook <a href="https://www.facebook.com/mecatronica85/" target="_blank">Mecatrónica 85</a></p>
-<p>Realizado por <a href="https://www.alejandro-leyva.com" target="_blank">Alejandro Leyva</a></p>
+<h2 id="ejemplos">Ejemplos:</h2>
+<p><strong>1. Realizar la multiplicación de dos numeros que ingrese el usuario e imprimir el resultado por pantalla</strong></p>
+<p>Como ya sabemos debemos comenzar con nuestro símbolo de <em>INICIO</em>, posteriormente debemos mandar un mensaje a la pantalla indicandole al usuario lo que debe realizar. El mensaje será <code>"Dar el primer valor a multiplicar"</code></p>
+<p><img alt="inicio" src="../img/e3_p2.png"/></p>
+<p>Después de mandar el mensaje, debemos recibir y almacenar ese valor. Por lo tanto, usamos el símbolo de ingreso de datos y lo tenemos que almacenar en una variable. Esta variable la llamaremos <code>numero1</code>.</p>
+<p><img alt="paso2" src="../img/e3_p3.png"/></p>
+<p>Una vez que ya tenemos el primer valor almacenado en memoria, vamos a mandar otro mensaje indicándole al usuario qué debe realizar. El mensaje será <code>"Dar el segundo valor a multiplciar"</code></p>
+<p><img alt="paso2" src="../img/e3_p4.png"/></p>
+<p>Siguiente paso es almacenar el dato que el usuario ingresará; lo guardaremos en una variable llamada <code>numero2</code>.</p>
+<p><img alt="paso2" src="../img/e3_p5.png"/></p>
+<p>Ahora que ya tenemos los valores que ingreso el usuario en las variables <code>numero1</code> y <code>numero2</code>, debemos realizar la operación matemáticas, en el <em>símbolo de proceso u operación</em>, este resultado guardarlo en la variable <code>resultado</code>.</p>
+<p><img alt="paso2" src="../img/e3_p6.png"/></p>
+<p>Una vez ya tenemos el resultado de la operación dentro de la variable <code>resultado</code>, solo nos quedo enviarlo a la pantalla y que el usuario conozco el resultado.</p>
+<p><img alt="paso2" src="../img/e3_p7.png"/></p>
+<p>Hemos terminado todas las acciones que ibas a realizar, solo nos queda terminar con el símbolo de <em>FIN</em>, con esto indicamos que el diagrama de flujo ha terminado su tarea.</p>
+<p><img alt="paso2" src="../img/e3_p8.png"/></p>
+<h2 id="precedencia-de-operadores">Precedencia de operadores</h2>
+<p><em>La precedencia de operadores funciona prácticamente igual que en matemáticas.</em> Recordemos que solo existen 5 operaciones aritméticas básicas en la programación (<em>Nota: En concreto por lenguaje puede variar</em>). </p>
+<table>
+<thead>
+<tr>
+<th align="center">Orden</th>
+<th align="left">Operación</th>
+<th align="center">Símbolo</th>
+<th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="left">Agrupación</td>
+<td align="center">( )</td>
+<td align="left">Los paréntesis solo realizan la operación de agrupar (no aritmética), la operación que esta en los paréntesis mas profundos son las primeras que se realizan</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="left">Residuo</td>
+<td align="center">%</td>
+<td align="left">Obtiene el residuo de una división</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="left">División</td>
+<td align="center">/</td>
+<td align="left">Realiza una división aritmética</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="left">Multiplicación</td>
+<td align="center">*</td>
+<td align="left">Realiza una multiplicación aritmética</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="left">Suma</td>
+<td align="center">+</td>
+<td align="left">Realiza una suma aritmética</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="left">Resta</td>
+<td align="center">-</td>
+<td align="left">Realiza una resta aritmética</td>
+</tr>
+</tbody>
+</table>
+<p>Vamos a hacer una comparativa en la forma matemáticas convencional y como se realiza en diagramas de flujo o programación (esto aplica prácticamente a cualquier lenguaje)</p>
+<h2 id="ejemplos_1">Ejemplos</h2>
+<table>
+<thead>
+<tr>
+<th>matemáticas</th>
+<th align="center">Programación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(4+3\)</span>\)</span></td>
+<td align="center"><strong>4 + 3</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(10-3\)</span>\)</span></td>
+<td align="center"><strong>10 - 3</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(5\times 5\)</span>\)</span></td>
+<td align="center"><strong>5 * 5</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(\frac{3}{2}\)</span>\)</span></td>
+<td align="center"><strong>2 / 3</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(\frac{2 + 4}{6}\)</span>\)</span></td>
+<td align="center"><strong>( 2 + 4 ) / 6</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(2 +  \frac{4}{3}\)</span>\)</span></td>
+<td align="center"><strong>2 + ( 4 / 3 )</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(\frac{x+y+z}{w}\)</span>\)</span></td>
+<td align="center"><strong>( x  + y + z ) / w</strong></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(x ^2\)</span>\)</span></td>
+<td align="center"><strong>x * x</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ejercicios">Ejercicios</h2>
+<p>Transformar las siguientes expresiones matemáticas a una representación de diagrama de flujo.</p>
+<table>
+<thead>
+<tr>
+<th>matemáticas</th>
+<th>Programación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(x + y\)</span>\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(\frac{4 - 2}{5}\)</span>\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(3 + \frac{4}{8}\)</span>\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(6 + 4 \times \frac{3}{9}\)</span>\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(<span class="arithmatex">\(\frac{3}{7} + \frac{8}{3}\)</span>\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                
+                  
                 
               
               
@@ -709,7 +881,7 @@ Entonces, al declarar variables estamos consumiendo memoria, la cual vamos a uti
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../02_Estructura_de_un_diagrama_de_flujo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Estructura de un diagrama de flujo" rel="prev">
+        <a href="../05_Introduccion_diagramas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction a creación de Diagramas de flujo" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -718,20 +890,20 @@ Entonces, al declarar variables estamos consumiendo memoria, la cual vamos a uti
               <span class="md-footer__direction">
                 Previous
               </span>
-              Estructura de un diagrama de flujo
+              Introduction a creación de Diagramas de flujo
             </div>
           </div>
         </a>
       
       
         
-        <a href="../04_tipos_datos/" class="md-footer__link md-footer__link--next" aria-label="Next: 04 tipos datos" rel="next">
+        <a href="../07_entradas_salidas/" class="md-footer__link md-footer__link--next" aria-label="Next: Entradas y salidas" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              04 tipos datos
+              Entradas y salidas
             </div>
           </div>
           <div class="md-footer__button md-icon">

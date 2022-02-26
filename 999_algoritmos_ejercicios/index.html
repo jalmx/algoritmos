@@ -8,13 +8,15 @@
       
       
       
+        <meta name="author" content="Alejandro Leyva">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>Variables - Algoritmos</title>
+        <title>Ejercicios de Algoritmos - Algoritmos</title>
       
     
     
@@ -61,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#variables" class="md-skip">
+        <a href="#ejercicios-de-algoritmos" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Variables
+              Ejercicios de Algoritmos
             
           </span>
         </div>
@@ -204,67 +206,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Variables
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../03_Variables/" class="md-nav__link">
         Variables
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-una-variable" class="md-nav__link">
-    Que es una variable?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-declarar-una-variable" class="md-nav__link">
-    Qué es declarar una variable?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-nombrar-una-variable" class="md-nav__link">
-    Cómo nombrar una variable?
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -410,11 +356,74 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../999_algoritmos_ejercicios/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Ejercicios de Algoritmos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Ejercicios de Algoritmos
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basicos" class="md-nav__link">
+    Básicos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisiones" class="md-nav__link">
+    Decisiones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operadores-logicos" class="md-nav__link">
+    Operadores lógicos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclos" class="md-nav__link">
+    Ciclos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -623,22 +632,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#que-es-una-variable" class="md-nav__link">
-    Que es una variable?
+  <a href="#basicos" class="md-nav__link">
+    Básicos
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#que-es-declarar-una-variable" class="md-nav__link">
-    Qué es declarar una variable?
+  <a href="#decisiones" class="md-nav__link">
+    Decisiones
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-nombrar-una-variable" class="md-nav__link">
-    Cómo nombrar una variable?
+  <a href="#operadores-logicos" class="md-nav__link">
+    Operadores lógicos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclos" class="md-nav__link">
+    Ciclos
   </a>
   
 </li>
@@ -656,40 +672,101 @@
               
                 
                 
-                <h1 id="variables">Variables</h1>
-<h2 id="que-es-una-variable">Que es una variable?</h2>
-<p>Una variable desde el punto de vista computacional, es un espacio en memoria. </p>
-<p>Desde el punto de vista matemático es un referencia o un nombre para un valor que desconocemos y puede tomar cualquier valor.</p>
-<p>Entonces, que es al final, es una combinación de ambas definiciones, es un espacio en memoria que puede almacenar un dato o datos, dependiendo del tipo de variable o el tamaño de la variable.</p>
-<h2 id="que-es-declarar-una-variable">Qué es declarar una variable?</h2>
-<p><strong>La declaración de una variable es reservar un espacio en memoria de la computadora</strong>.
-La computadora tiene cierta cantidad de memoria, la cual es repartida entre todos los programas y los propios procesos para ejecutar el sistema operativo. Cuando ejecutamos un programa, éste comienza reservar memoria para poder trabajar.
-Entonces, al declarar variables estamos consumiendo memoria, la cual vamos a utilizar en algún momento, si estamos reservando el espacio significa que en algún otro momento necesitamos recuperar lo que hemos guardado para realizar otra operación, de lo contrario no necesitamos reservar memoria si el valor solo será utilizado una única vez.</p>
-<h2 id="como-nombrar-una-variable">Cómo nombrar una variable?</h2>
-<p>Dentro de la programación existen <strong>buenas practicas</strong> para declarar variables. Estas reglas se definen a lo largo del tiempo que ha evolucionado. Estas son las reglas genéricas para (casi) todos lenguajes. </p>
+                <p><img alt="banner micro" src="https://www.alejandro-leyva.com/micro-21/web/imgs/banner.png"/></p>
+<h1 id="ejercicios-de-algoritmos">Ejercicios de Algoritmos</h1>
+<p>Por default se da por sentado que se deben pedir los datos al usuario para poder realizar las operaciones que se solicitan. Puedes personalizar tus algoritmos con mensajes especiales al inicio y al final (dale tu toque personal).</p>
+<h2 id="basicos">Básicos</h2>
+<ol>
+<li>
+<p>Realizar el <strong>calculo del perímetro de un rectángulo</strong>, solicitando el lado de la figura al usuario</p>
+</li>
+<li>
+<p>Realizar el <strong>calculo del area de un cuadrado</strong>, solicitando el lado de la figura al usuario.</p>
+</li>
+<li>Realizar un programa que realice el <strong>calculo de Fuerza</strong> en la segunda Ley de Newton. La formula es <span class="arithmatex">\(F=masa * aceleración\)</span></li>
+</ol>
+<h2 id="decisiones">Decisiones</h2>
+<ol>
+<li>
+<p>Solicitar un numero entero al usuario, e imprimir por pantalla si es valor par o impar</p>
+</li>
+<li>
+<p>Realizar una calculadora básica, que realice la operación de sumar, restar, multiplicar, dividir. Al comenzar muestre un menu y el usuario elija la opción deseada. Se debe pedir el primer valor y el segundo, con ello realizar la operación</p>
+</li>
+<li>
+<p>Hacer una calculadora de áreas geométricas, las opciones son:</p>
 <ul>
-<li>Deben comenzar en minúscula</li>
-<li>Se escriben en minúsculas, las variantes se dan cuando son más de dos palabras.</li>
-<li>Solo puede contener números al final.</li>
-<li>Sensibles a minúsculas y mayúsculas; es decir, si declaro una variable llamada <code>variable1</code> y otra llamada <code>Variable1</code>, para la computadora son variables o espacios de memoria distintos, aun que suenen igual, con el solo hecho de cambiar una letra, ya estamos hablando de una variable distinta.</li>
-<li>No pueden contener espacios entre letras o palabras</li>
-<li>No puede comenzar con números o símbolos</li>
-<li>No puede contener caracteres especiales, todos son caracteres especiales menos el abecedario ingles. Ejemplo: <code>!"·%&amp;-+/()=?¿...</code>, los únicos símbolos permitidos son <code>$</code> y <code>_</code>.</li>
-<li><strong>El nombre debe ser descriptivo</strong>; es decir, con solo leerlo podemos deducir qué hace o para qué fue declarada</li>
-<li><em>(Regla especial):</em> Todo de escribe en ingles.</li>
-<li><em>(Regla especial)</em>: Si se desea escribir una variable combinando dos palabras o más, se separarán con un guión bajo, se aplica la convención <code>CamelCase</code>, es decir, en lugar de usar el espacio la palabra debe continuar con letra mayúscula.</li>
-<li>Ejemplos:<ul>
-<li><code>valor</code></li>
-<li><code>valor1</code></li>
-<li><code>valorUno</code></li>
-<li><code>variableNueva</code></li>
+<li>Área del cuadrado</li>
+<li>Área del círculo</li>
+<li>Área del triángulo</li>
+<li>Con opción de salir del programa y al final imprimir el resultado con la frase "El área del figura elegida es resultado"</li>
 </ul>
 </li>
+<li>
+<p>Hacer una calculadora de ley de ohms, las opciones son:</p>
+<ul>
+<li>Calcular resistencia</li>
+<li>Calcular corriente</li>
+<li>Calcular voltaje</li>
+<li>Con opción de salir del programa y al final debe imprimir el resultado con la frase "El resultado es valor es: "</li>
 </ul>
-<p>Las convenciones de Camel Case y Snake Case no las menciona por el momento, porque aplican en función de un lenguaje en concreto, hasta el momento esto aplicará para diagramas de flujo, lo cual es algo genérico y base.</p>
-<!-- text autogenerated footer -->
-<p>Facebook <a href="https://www.facebook.com/mecatronica85/" target="_blank">Mecatrónica 85</a></p>
-<p>Realizado por <a href="https://www.alejandro-leyva.com" target="_blank">Alejandro Leyva</a></p>
+</li>
+</ol>
+<h2 id="operadores-logicos">Operadores lógicos</h2>
+<ol>
+<li>Solicitar al usuario su promedio actual, en valor entero, el algoritmo debe tomar la decision con basé al numero ingresado; si es menor a 6, imprimir "lastima margarito", sí es igual 6 imprimir el mensaje "Aplicate", sí la calificación es igual 7 "Apenitas y la libraste, metele", si es igual a 8 debe decir "Bastante bien, puedes mejorar" y sí la calificación es mayor a 9,
+decirle al usuario "Excelente, tu muy bien".</li>
+</ol>
+<h2 id="ciclos">Ciclos</h2>
+<ol>
+<li>
+<p>Imprimir del 1 al 99</p>
+</li>
+<li>
+<p>Calcular el promedio final, solicita al usuario sus calificaciones parciales una a una, y al final da el mensaje "Aprobado", en caso que haya pasado arriba de 6 y "Estas en repite" si es menor.</p>
+</li>
+<li>
+<p>Imprimir la tabla del 8, desde <span class="arithmatex">\(8 \times 1=8\)</span> hasta <span class="arithmatex">\(8 \times 10=80\)</span>*</p>
+</li>
+<li>
+<p>Realizar un programa para visualizar la tabla de multiplicar que desee el usuario, el usuario dará el valor para la tabla, la tabla debe de ir desde el 1 hasta el 10, es decir, <em>por ejemplo si da el numero 3, la tabla comienza en <span class="arithmatex">\(3 \times 1=3\)</span> ... hasta <span class="arithmatex">\(3 \times 10=30\)</span></em></p>
+</li>
+<li>
+<p>Realizar un programa para visualizar la tabla de multiplicar que desee el usuario, el usuario dará el valor para la tabla, también debe dar el limite donde comienza hasta donde termina, es decir, <em>por ejemplo si da el numero 5, comenzando desde el 3 hasta el 25, comenzara la tabla <span class="arithmatex">\(5 \times 3 = 15\)</span> ... <span class="arithmatex">\(5 \times 25=125\)</span></em></p>
+</li>
+<li>
+<p><strong>Leer 10 numeros enteros</strong>, solicitando uno a uno al usuario, e imprimir al final cuántos de los que ingresaron fueron <strong>par</strong> y cuántos <strong>impar</strong></p>
+</li>
+<li>
+<p>Realizar el diagrama de flujo que convierta un numero decimal a binario; es decir, <em>si el usuario da el valor de </em><em>8</em><em> , el programa debe imprimir </em><em>1000</em>**. (No es necesario que sean todos los dígitos juntos, podrán salir uno a uno, primero el 1, después el 0, el otro 0 y el ultimo 0). <mark>Tip: Investiga la formula para convertir numeros decimales a binarios.</mark></p>
+</li>
+<li>
+<p><strong>Calcular el factorial de un numero entero</strong>. Se le solicita al usuario que ingrese un numero entero el cuál quiere calcular el factorial del mismo</p>
+</li>
+<li>
+<p>Calcular la potencia de un numero, solicita al usuario el numero que desea elevar y después la base a la cuál lo elevara. Ejemplo: <span class="arithmatex">\(2^2= 4\)</span>, <span class="arithmatex">\(2^3=8\)</span>. <mark>Tip: Recuerda como se realiza de manera manual la potencialización</mark></p>
+</li>
+<li>
+<p>Leer 10 numero, solicitando uno a uno al usuario, y al final se imprime por pantalla el numero más alto introducido de los 10.</p>
+</li>
+<li>
+<p><strong>Calculadora de la segunda ley de Newton</strong>. Sale el menú indicando que desea calcular y la opción de salir. Después solicita al usuario los valores que conocé e imprimir el resultado, una vez termina de hacer todas las operaciones, debe regresar al menú inicial</p>
+</li>
+<li>
+<p>Cálculo de la <strong>media</strong> de un conjunto de datos. Se le pregunta al usuario cuantos números son, comienza a pedirlos uno a uno y al final imprime el resultado de la media de todos los números introducidos.</p>
+</li>
+<li>
+<p>Realizar un programa que solicite las calificaciones del parcial; es decir, irá pidiendo una a una las calificaciones, y al <strong>final que diga si te vas a recursamiento o no</strong></p>
+</li>
+<li>
+<p>Hacer una caja registradora, que vaya recibiendo el valor del producto y al final entregue el costo total con IVA y sin IVA; es decir, <strong>En total es $18.35 y con IVA son $21.28</strong>, recordar que el <strong>IVA es del 16%</strong></p>
+</li>
+<li>
+<p>Programa que diga si existen o no las raíces de una ecuación cuadrática, aplicando la fórmula general; <em>recuerda que no existen las raíces negativas</em></p>
+</li>
+</ol>
+                
+                  
                 
               
               
@@ -709,7 +786,7 @@ Entonces, al declarar variables estamos consumiendo memoria, la cual vamos a uti
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../02_Estructura_de_un_diagrama_de_flujo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Estructura de un diagrama de flujo" rel="prev">
+        <a href="../11_operadores_logicos/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Operadores lógicos" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -718,20 +795,20 @@ Entonces, al declarar variables estamos consumiendo memoria, la cual vamos a uti
               <span class="md-footer__direction">
                 Previous
               </span>
-              Estructura de un diagrama de flujo
+              Operadores lógicos
             </div>
           </div>
         </a>
       
       
         
-        <a href="../04_tipos_datos/" class="md-footer__link md-footer__link--next" aria-label="Next: 04 tipos datos" rel="next">
+        <a href="../_11_ciclos/" class="md-footer__link md-footer__link--next" aria-label="Next:  11 ciclos" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              04 tipos datos
+               11 ciclos
             </div>
           </div>
           <div class="md-footer__button md-icon">
