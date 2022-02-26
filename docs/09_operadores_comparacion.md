@@ -59,5 +59,90 @@ En  este caso las variables tienen este valor:
 
 ## Ejemplos
 
+!!! example "Ejemplo 1"
+    Preguntar al usuario su edad e imprimir si es mayor o menor de edad en función de la edad.
+    
+    **Pseudocódigo**
+
+    ```java
+    Algoritmo MenorMayorEdad
+        Imprimir "Dar la edad"
+        Leer edad
+        
+        Si edad >= 18 Entonces
+            Imprimir "Eres mayor de edad"
+        FinSi
+        
+        Si edad < 18 Entonces
+            Imprimir "Aun eres menor de edad"
+        FinSi
+		
+    FinAlgoritmo
+    ```
+    **Diagrama de Flujo**
+
+    ![diagrama](img/ej_comparacion_1.png)
 
 
+!!! example "Ejemplo 2"
+    Solicitar un numero e indicar si es par o impar.
+    
+    **Pseudocódigo**
+
+    ```java
+    Algoritmo ParImpar
+        Escribir 'Dar un numero para conocer si es par o impar'
+        Leer numero
+        Si numero % 2 == 0 Entonces
+            Escribir 'El numero es par'
+        FinSi
+        
+        Si numero % 2 <> 0 Entonces
+            Escribir 'El numero es impar'
+        FinSi
+    FinAlgoritmo
+    ```
+
+    **Diagrama de flujo**
+
+    ![diagrama](img/ej_comparacion_2.png)    
+
+
+
+!!! example "Ejemplo 3"
+    Calculadora para obtener el área o el perímetro de un rectángulo, dependiendo del usuario
+
+    **Pseudocódigo**
+
+    ```java
+    Algoritmo CalculadoraRectangulo
+        Escribir 'Calculadora de Area o Perimetro del Rectangulo'
+        Escribir '1) Area'
+        Escribir '2) Perimetro'
+        Leer option
+        
+        Si option == 1 Entonces
+            Imprimir "Dar el valor de la base"
+            Leer base
+            Imprimir "Dar el valor de la altura"
+            Leer altura
+            area = base * altura
+            Imprimir "El area del rectangulo es ", area 
+        FinSi
+        
+        Si option == 2 Entonces
+            Imprimir "Dar el valor de la base"
+            Leer base
+            Imprimir "Dar el valor de la altura"
+            Leer altura
+            perimetro = (2*base) + (2* altura)
+            Imprimir "El perimetro del rectangulo es ", perimetro
+        FinSi
+    FinAlgoritmo
+    ```
+
+    **Diagrama de flujo**
+
+    ![diagrama](img/ej_comparacion_3.png)    
+
+> Nota: No es la única forma en la que se pueden realizar estos ejercicios, recuerda que lo importante es resolver el problema, que hayan mas o menos pasos, diferentes formulas, etc, no significa que este mal.

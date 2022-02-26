@@ -1,4 +1,4 @@
-# Comparaciones o Decisiones (*if*)
+# Comparaciones o Decisiones (if) 
 
 Una comparación me ayuda a poder cambiar una ruta o indicar hacer otra tarea con base a una comparación, con ello podemos hacer mas diverso y variante nuestro algoritmo, puesto no todo es estático y podemos hacer nuestro programa dinámico.
 

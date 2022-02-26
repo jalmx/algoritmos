@@ -37,7 +37,14 @@ def clear_link(path_file):
     with open(path_file, "w+") as md:
         md.writelines(content)
 
+def generate_link(**kwargs):
+    """Generate a tag with the content, a <p> and inside a <a>
 
+    Returns:
+        kwargs: content for <p>, href and text to <a>
+    """
+    return f'<p>{kwargs["content"]} <a href="{kwargs["href"]}" target="_blank">{kwargs["link_text"]}</a></p>'.strip()
+    
 def get_temp_html(file_name: str):
     """Generate template html for inject into markdown
 
@@ -47,10 +54,15 @@ def get_temp_html(file_name: str):
     Returns:
         string: Template html with name file
     """
-    return f'''\n\n{reference_text}\n
-                <p>Facebook <a href="https://www.facebook.com/mecatronica85/" target="_blank">Mecatrónica 85</a></p>
-                <p>Realizado por <a href="https://www.alejandro-leyva.com" target="_blank">Alejandro Leyva</a></p>
-            '''
+    list_texts = [
+        generate_link(content="Facebook", href="https://www.facebook.com/mecatronica85/", link_text="Mecatrónica 85"),
+        generate_link(content="Realizado por", href="https://www.alejandro-leyva.com", link_text="Alejandro Leyva")
+    ]
+    footer = ''
+    for tag in list_texts:
+        footer+= tag
+        
+    return f'''\n\n{reference_text} {footer}'''
 
 
 def get_files_md(path):
@@ -91,7 +103,9 @@ if __name__ == "__main__":
 
     for markdown in get_files_md(path_to_search):
         clear_link(markdown)
+        inject_code(markdown, get_name_file(markdown))
         break
-        #inject_code(markdown, get_name_file(markdown))
         
         
+        
+#FIXME: this have to run  inside html, no markdown
