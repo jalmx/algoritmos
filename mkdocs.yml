@@ -7,6 +7,7 @@ edit_uri: ""
 
 theme:
   name: material
+  custom_dir: overrides
   locale: es
   palette:
     - media: "(prefers-color-scheme: light)" 
