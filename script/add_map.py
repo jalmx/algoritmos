@@ -5,12 +5,14 @@ from pathlib import Path
     Script to add create a markmap taking all files markdown and its subtitles
 """
 
-flag_to_insert = "<!-- Map site insert-->"
-flag_start = "<!-- Map site start-->"
-flag_end = "<!-- Map site end-->"
+FLAG_TO_INSERT = "<!-- Map site insert-->"
+FLAG_START = "<!-- Map site start-->"
+FLAG_END = "<!-- Map site end-->"
 
-## No usados por el momento
-def clear_link(path_file):
+## FIXME: ajustar estas funciones
+
+
+def clear_map(path_file):
     """Replace old file with the content without link to download pdf
 
     Args:
@@ -21,7 +23,7 @@ def clear_link(path_file):
     with open(path_file, "r+") as md:
         print("Clear file: ", path_file)
         for line in md.readlines():
-            if not line.find(flag_start):
+            if not line.find(FLAG_START):
                 break
             content += line
 
@@ -29,7 +31,7 @@ def clear_link(path_file):
         md.writelines(content)
 
 
-def inject_code(file_path, file_name):
+def inject_map(file_path, file_name):
     """Inject template html to final documento markdown
 
     Args:
@@ -41,17 +43,77 @@ def inject_code(file_path, file_name):
         print("Template add to: ", file_path)
 
 
-def generate_link(**kwargs):
-    """Generate a tag with the content, a <p> and inside a <a>
-
-    Returns:
-        kwargs: content for <p>, href and text to <a>
-    """
-    return f'<p>{kwargs["content"]} <a href="{kwargs["href"]}" target="_blank">{kwargs["link_text"]}</a></p>'.strip()
-
 ####################################
 
-def get_files_md(path):
+
+def build_markmap(list_headers):
+    map_init = "```markmap"
+    map_end = "```"
+
+    content = f"{map_init}\n"
+    for line in list_headers:
+        content += f"{line}\n"
+
+    content += map_end
+
+    return content
+
+
+def get_structure_without_hash(path_file):
+    """Generate a dict with the structure of document, list of title and subtitles
+
+    Args:
+        path_file (Path): Path of file markdown
+
+    Returns:
+        dict: Structure with all title and subtitles, the key is h#
+    """
+    structure = {}
+
+    with open(path_file, "r") as file:
+        for line in file.readlines():
+            if line.strip().startswith("#"):
+
+                number_hash = len(line.split(" ")[0])
+
+                new_line = line.replace("#" * number_hash, "").strip()
+
+                if not structure.get(f"h{number_hash}"):
+                    structure[f"h{number_hash}"] = [new_line]
+                else:
+                    structure[f"h{number_hash}"].append(new_line)
+
+    return structure
+
+
+def get_structure_with_hash(path_file):
+    """Generate a dict with the structure of document, list of title and subtitles
+
+    Args:
+        path_file (Path): Path of file markdown
+
+    Returns:
+        dict: Structure with all title and subtitles, the key is h#
+    """
+    structure = {}
+
+    with open(path_file, "r") as file:
+        for line in file.readlines():
+            if line.strip().startswith("#"):
+
+                number_hash = len(line.split(" ")[0])
+
+                new_line = line.strip()
+
+                if not structure.get(f"h{number_hash}"):
+                    structure[f"h{number_hash}"] = [new_line]
+                else:
+                    structure[f"h{number_hash}"].append(new_line)
+
+    return structure
+
+
+def get_all_md(path):
     """get alls files markdown from folder and subfolders
 
     Args:
@@ -64,17 +126,85 @@ def get_files_md(path):
 
     for file in Path(path).iterdir():
         if file.is_dir():
-            list_md += get_files_md(file)
+            list_md += get_all_md(file)
         if file.is_file() and str(file).endswith(".md"):
             list_md.append(os.path.abspath(file))
 
-    return list_md
+    return sorted(list_md)
 
+
+def get_all_md_from_folder(path):
+    """get alls files markdown from folder
+
+    Args:
+        path (Path): path for to search files md
+
+    Returns:
+        list: markdown files's list
+    """
+    list_md = []
+
+    for file in Path(path).iterdir():
+
+        if file.is_file() and str(file).endswith(".md"):
+            list_md.append(os.path.abspath(file))
+
+    return sorted(list_md)
+
+
+def get_paths_abs(base_dir, *args):
+    """Generate a list of paths absolutes from base dir and all name of folders
+
+    Args:
+        base_dir (Path): Path base to generate path absolute, join base dir and folders
+
+    Returns:
+        List: List with all paths from folders
+    """
+    paths = []
+
+    for path in args:
+        paths.append(os.path.abspath(f"{base_dir}{os.path.sep}{path}"))
+
+    return sorted(list(set(paths)))
+
+
+def get_all_folders(path):
+    """Get all folders and subfolders from path
+
+    Args:
+        path (Path): Receive a path to search folders
+
+    Returns:
+        List: List of folders and sobfolders
+    """
+    list_dir = []
+    for file in Path(os.path.abspath(path)).iterdir():
+        if file.is_dir():
+            list_dir.append(os.path.abspath(file))
+            if len(get_all_folders(os.path.abspath(file))):
+                list_dir += get_all_folders(os.path.abspath(file))
+
+    if not (os.path.abspath(path) is list_dir):
+        list_dir.append(os.path.abspath(path))
+
+    return sorted(list(set(list_dir)))
 
 
 if __name__ == "__main__":
 
-    path_to_search = "../test/"
+    PATH_TO_SEARCH = "../docs/"
+    # path_file_get_title_map = os.path.abspath(PATH_TO_SEARCH + os.path.sep + "index.md")
+    paths_excludes = get_paths_abs(
+        PATH_TO_SEARCH, "extras", "icons", "img", "javascripts", "stylesheets"
+    )
 
-    for markdown in get_files_md(path_to_search):
-        print(markdown)
+    for folder in get_all_folders(PATH_TO_SEARCH):
+        
+        for path_exclude in paths_excludes:
+            if str(folder).startswith(path_exclude):
+                break
+        print(folder)
+                # for markdown in get_all_md_from_folder(folder):
+                #     print(markdown)
+                    #print(get_structure_with_hash(markdown))
