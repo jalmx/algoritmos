@@ -16,6 +16,7 @@
 - Un protocolo
 - Una secuencia
 - Un plan
+- Una estrategia
 
 ## Diagrama de flujo
 

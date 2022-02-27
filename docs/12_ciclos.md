@@ -59,7 +59,7 @@ Son los nombres mas comunes que les dan a la variable que nos ayuda en el moment
     
     Imprimir 10 veces la palabra "hola"
 
-     **Pseudocódigo**
+    **Pseudocódigo**
     
     ```python
     Algoritmo Hola10
