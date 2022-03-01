@@ -86,7 +86,8 @@ if __name__ == "__main__":
     path_to_search = "../docs/"
 
     for markdown in get_files_md(path_to_search):
+        print(markdown)
         clear_link(markdown)
-        #inject_code(markdown, get_name_file(markdown))
+        inject_code(markdown, get_name_file(markdown))
         
         

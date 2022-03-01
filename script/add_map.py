@@ -20,6 +20,7 @@ def clear_map(path_file):
     """
     content = ""
 
+
     with open(path_file, "r+") as md:
         print("Clear file: ", path_file)
         for line in md.readlines():
@@ -191,23 +192,26 @@ def get_all_folders(path):
     return sorted(list(set(list_dir)))
 
 
+def remove_path_home(list_path:list):
+    list_complete_new = []
+    
+    for folder in list_path:
+        list_complete_new.append(folder.replace(str(Path.home()),""))
+    return list_complete_new
+    
+
 def clean_list_folder(list_complete: list, list_exclude: list):
     list_clean = []
-    add = False
-    for folder in list_complete:
-        for exclude in list_exclude:
-            print("F:", folder, "- E:", exclude)
-            # if not folder.startswith(exclude):
-            #     print("debe ir ", folder)
-            #     #list_clean.append(folder)
-            #     break
-            if exclude.startswith(folder):
-                add = True
-
-        if add:
-            list_clean.append(folder)
-        print("===================================")
-
+    
+    list_complete_new = remove_path_home(list_complete)
+    list_exclude_new = remove_path_home(list_exclude)
+        
+    for folder in list_complete_new:
+        print(folder.split("/")[1:])
+    
+    for folder in list_exclude_new:
+        print(folder.split("/")[1:])    
+    
     return sorted(set(list_clean))
 
 
@@ -226,7 +230,7 @@ def _clean_list_folder(list_complete: list, list_exclude: list):
 
 if __name__ == "__main__":
 
-    PATH_TO_SEARCH = "../test/"
+    PATH_TO_SEARCH = "../docs/"
     # path_file_get_title_map = os.path.abspath(PATH_TO_SEARCH + os.path.sep + "index.md")
     paths_excludes = get_paths_abs(
         PATH_TO_SEARCH, "icons", "img", "javascripts", "stylesheets", "extras"
@@ -242,9 +246,9 @@ if __name__ == "__main__":
 
     print("=======================DIFF")
 
-    # print(clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes))
-    for a in clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes):
-        print(a)
+    print(clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes))
+    # for a in clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes):
+    #     print(a)
 
         # for markdown in get_all_md_from_folder(folder):
         #     print(markdown)
