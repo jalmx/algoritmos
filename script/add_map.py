@@ -143,13 +143,9 @@ def get_all_md_from_folder(path):
     Returns:
         list: markdown files's list
     """
-    list_md = []
 
-    for file in Path(path).iterdir():
-
-        if file.is_file() and str(file).endswith(".md"):
-            list_md.append(os.path.abspath(file))
-
+    list_md = [ os.path.abspath(file) for file in (Path(path).iterdir()) if file.is_file() and str(file).endswith(".md") ]
+    
     return sorted(list_md)
 
 
@@ -162,12 +158,15 @@ def get_paths_abs(base_dir, *args):
     Returns:
         List: List with all paths from folders
     """
-    paths = []
+    # paths = []
 
-    for path in args:
-        paths.append(os.path.abspath(f"{base_dir}{os.path.sep}{path}"))
+    # for path in args: TODO: Delete this section
+    #     paths.append(os.path.abspath(f"{base_dir}{os.path.sep}{path}"))
+        
+        
+    paths = [ os.path.abspath(f"{base_dir}{os.path.sep}{path}") for path in args  ]
 
-    return sorted(list(set(paths)))
+    return sorted(set(paths))
 
 
 def get_all_folders(path):
@@ -193,39 +192,26 @@ def get_all_folders(path):
 
 
 def remove_path_home(list_path:list):
-    list_complete_new = []
     
-    for folder in list_path:
-        list_complete_new.append(folder.replace(str(Path.home()),""))
-    return list_complete_new
+    return [folder.replace(str(Path.home()),"") for folder in list_path ]
     
 
 def clean_list_folder(list_complete: list, list_exclude: list):
-    list_clean = []
     
-    list_complete_new = remove_path_home(list_complete)
-    list_exclude_new = remove_path_home(list_exclude)
-        
-    for folder in list_complete_new:
-        print(folder.split("/")[1:])
-    
-    for folder in list_exclude_new:
-        print(folder.split("/")[1:])    
-    
-    return sorted(set(list_clean))
-
-
-def _clean_list_folder(list_complete: list, list_exclude: list):
-    list_clean = []  # foldback
+    # delete all equals while have it
 
     for exclude in list_exclude:
-        for folder in list_complete:
-            if not exclude.startswith(folder):
-                break
-            print("folder:", folder, "exclude", exclude)
-            list_clean.append(folder)
+        if exclude in list_complete:
+            list_complete.remove(exclude)
 
-    return sorted(set(list_clean))
+    list_comodin = [exclude for exclude in list_exclude if exclude.count("*")  ]
+    #add paths with comodin
+    
+
+    for p in list_complete:
+        print(p)
+    
+    return sorted(list_complete)
 
 
 if __name__ == "__main__":
@@ -233,7 +219,8 @@ if __name__ == "__main__":
     PATH_TO_SEARCH = "../docs/"
     # path_file_get_title_map = os.path.abspath(PATH_TO_SEARCH + os.path.sep + "index.md")
     paths_excludes = get_paths_abs(
-        PATH_TO_SEARCH, "icons", "img", "javascripts", "stylesheets", "extras"
+        PATH_TO_SEARCH, "icons", "img", "javascripts", "stylesheets",
+        "extras/*", "no_existe/*"
     )
 
     # print("=======================EXCLUDES")
@@ -244,12 +231,16 @@ if __name__ == "__main__":
     # for e in get_all_folders(PATH_TO_SEARCH):
     #     print(e)
 
-    print("=======================DIFF")
+    # print("=======================DIFF")
 
     print(clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes))
     # for a in clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes):
     #     print(a)
 
-        # for markdown in get_all_md_from_folder(folder):
-        #     print(markdown)
+    #print(get_all_md_from_folder("../docs"))
+
+    # for markdown in get_all_md_from_folder(folder):
+    #     print(markdown)
+    #     break
         # print(get_structure_with_hash(markdown))
+
