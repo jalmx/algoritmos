@@ -3,7 +3,6 @@ title: Ejercicios de Algoritmos
 author: Alejandro Leyva
 ---
 
-
 ![banner micro](https://www.alejandro-leyva.com/micro-21/web/imgs/banner.png)
 
 # Ejercicios de Algoritmos

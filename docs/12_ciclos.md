@@ -11,6 +11,7 @@ La estructura de repetición o ciclo no ayuda a realizar iteraciones para realiz
 - Las estaciones del año
 - El ciclo de la vida
 - El ciclo del agua
+- La fotosíntesis
 
 ## La variable auxiliar 
 
@@ -26,6 +27,9 @@ Para poder lograr esto necesitamos una variable *auxiliar* la cual nos ayudara a
 - `aux`
 - `auxiliar`
 - `count`
+- `temp`
+- `tmp`
+- `temporal`
 
 Son los nombres mas comunes que les dan a la variable que nos ayuda en el momento de que un ciclo comienza, avanza y termina, es nuestra bandera indicadora de estas tres acciones.
 
