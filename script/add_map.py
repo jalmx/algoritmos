@@ -6,25 +6,31 @@ from pathlib import Path
 """
 
 
-## FIXME: ajustar estas funciones
-
-
-def clear_map(
-    path_file,
-):  # TODO: hacer el ajuste para que se borre y se inserte de nuevo el mapa
+def clear_map(path_file, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"): 
     """Replace old file with the content without link to download pdf
 
     Args:
         path_file (Path): File path to clean text generated automate
+        flag_to_start (str): section inside to START the markdown where to put the map
+        flag_to_end (str): section inside to END the markdown where to put the map
     """
+    
     content = ""
 
+    write= True
+    
     with open(path_file, "r+") as md:
         print("Clear file: ", path_file)
+        
         for line in md.readlines():
-            if not line.find(FLAG_TO_INSERT):
-                break
-            content += f'{line}'
+            if line.startswith(flag_to_start):
+                write = False
+            if line.startswith(flag_to_end):
+                write = True
+                continue
+            
+            if write:
+                content += f'{line}'
 
     with open(path_file, "w+") as md:
         md.writelines(content)
@@ -47,10 +53,10 @@ def inject_map(file_path, content, **options):
     with open(file_path, "r") as md:
         for line in md.readlines():
             content_full += f'{line}'
-            
+
             if line.find(options["flag_to_insert"]) >= 0:
                 content_full += content
-                
+
     with open(file_path, "w+") as md:
         md.writelines(content_full)
 
@@ -73,17 +79,17 @@ def build_section_markmap(section: dict):
     return section_str
 
 
-def build_markmap(list_structure_header: dict, flag_start="<!-- Map site start -->", flag_end="<!-- Map site end-->"):
+def build_markmap(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
     map_init = "```markmap"
     map_end = "\n```"
-    
-    content = f"\n{flag_start}\n{map_init}\n"
+
+    content = f"\n{flag_to_start}\n{map_init}\n"
     content += f'{list_structure_header["structure_index_title"]["h1"][0]}\n\n'
 
     for structure in list_structure_header["list_structure"]:
         content += build_section_markmap(structure)
 
-    content += f'\n{map_end}\n{flag_end}\n'
+    content += f'\n{map_end}\n{flag_to_end}\n'
     return content
 
 
@@ -180,7 +186,7 @@ def get_all_md_from_folder(path):
     return sorted(list_md)
 
 
-def get_paths_abs(base_dir, *args):  # FIXME: DELETE METHOD
+def get_paths_abs(base_dir, *args):
     """Generate a list of paths absolutes from base dir and all name of folders
 
     Args:
@@ -189,12 +195,9 @@ def get_paths_abs(base_dir, *args):  # FIXME: DELETE METHOD
     Returns:
         List: List with all paths from folders
     """
-    # paths = []
 
-    # for path in args: TODO: Delete this section
-    #     paths.append(os.path.abspath(f"{base_dir}{os.path.sep}{path}"))
-
-    paths = [os.path.abspath(f"{base_dir}{os.path.sep}{path}") for path in args]
+    paths = [os.path.abspath(f"{base_dir}{os.path.sep}{path}")
+             for path in args]
 
     return sorted(set(paths))
 
@@ -249,14 +252,14 @@ def clean_list_folder(list_complete: list, list_exclude: list):
     return sorted(list_complete)
 
 
-if __name__ == "__main__":
-
+def main():
     SECCION_TO_INSERT = "## Mapa del "
     FLAG_TO_INSERT = "<!-- Map site insert -->"
     FLAG_START = "<!-- Map site start -->"
+    FLAG_END = "<!-- Map site end -->"
 
     PATH_TO_SEARCH = "../docs/"
-    
+
     paths_excludes = get_paths_abs(
         PATH_TO_SEARCH,
         "icons",
@@ -267,28 +270,36 @@ if __name__ == "__main__":
     )
 
     for path in clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes):
-        file_index = ""
+        file_path_index = ""
         markmap = ""
         list_structure_md = []
         structure_index_title = None
         for markdown in get_all_md_from_folder(path):
             if markdown.endswith("index.md"):
-                file_index = markdown
+                file_path_index = markdown
                 structure_index_title = get_structure_with_hash(markdown)
                 continue
 
             list_structure_md.append(get_structure_with_hash(markdown))
 
-        if file_index:
-            print(file_index)
+        if file_path_index:
+            print(file_path_index)
             map_one = {
-                "index_file_path": file_index,
+                "index_file_path": file_path_index,
                 "list_structure": list_structure_md,
                 "structure_index_title": structure_index_title,
             }
-            
-            inject_map(file_index, build_markmap(map_one), flag_to_insert=FLAG_TO_INSERT)
+
+            clear_map(file_path_index, flag_to_start=FLAG_START,
+                      flag_to_end=FLAG_END)
+            inject_map(
+                file_path_index, 
+                build_markmap(list_structure_header=map_one, flag_to_start=FLAG_START, flag_to_end=FLAG_END),
+                flag_to_insert=FLAG_TO_INSERT)
         else:
-            print("no have index.md, path:", path)
+            print("=============== no have index.md, path:",
+                  path, "===============================")
 
 
+if __name__ == "__main__":
+    main()
