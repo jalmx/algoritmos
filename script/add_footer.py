@@ -41,9 +41,9 @@ def generate_link(**kwargs):
     """Generate a tag with the content, a <p> and inside a <a>
 
     Returns:
-        kwargs: content for <p>, href and text to <a>
+        kwargs: content for <blockquote>, href and text to <a>
     """
-    return f'<p>{kwargs["content"]} <a href="{kwargs["href"]}" target="_blank">{kwargs["link_text"]}</a></p>'.strip()
+    return f'<blockquote>{kwargs["content"]} <a href="{kwargs["href"]}" target="_blank">{kwargs["link_text"]}</a></blockquote>'.strip()
     
 def get_temp_html(file_name: str):
     """Generate template html for inject into markdown
@@ -62,7 +62,7 @@ def get_temp_html(file_name: str):
     for tag in list_texts:
         footer+= tag
         
-    return f'''\n\n{reference_text} {footer}'''
+    return f'''\n\n{reference_text}<hr>{footer}'''
 
 
 def get_files_md(path):
@@ -106,6 +106,3 @@ if __name__ == "__main__":
         inject_code(markdown, get_name_file(markdown))
         
         
-        
-        
-#FIXME: this have to run  inside html, no markdown

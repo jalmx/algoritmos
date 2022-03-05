@@ -96,6 +96,8 @@ plugins:
   - search:
       lang: es
       indexing: 'full'
+  - minify:
+      minify_html: true
   - tags
   - markmap
   
