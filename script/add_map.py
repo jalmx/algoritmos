@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+from urllib.parse import quote
+
 
 """
     Script to add create a markmap taking all files markdown and its subtitles
@@ -79,7 +81,55 @@ def build_section_markmap(section: dict):
     return section_str
 
 
-def build_markmap(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
+def build_section_markmap_with_link(section: dict):
+    """Build all markmap with the content from markdown structure, and add a hash before to build the sequence
+
+    Args:
+        section (dict): structure from markdown header's sections
+
+    Returns:
+        str: All markmap content to insert
+    """
+    def clean_accent(txt):
+        a,b = 'áéíóúüñÁÉÍÓÚÜÑ','aeiouunAEIOUUN'
+        trans = str.maketrans(a,b)
+        return txt.translate(trans)
+
+    def generate_sub_link(link):        
+        return clean_accent(link.lower()).replace("#","").strip().replace(" ","-").replace("(","").replace(")","")
+    
+    def generate_hash(header:str):
+        return header.count("#") * "#"
+        
+    
+    def generate_link(path:str):
+        path = path.split("/")[-1].replace(".md","")
+        return  quote(path)
+        
+    section_str = ""
+    
+    section_headers = section["structure"]
+        
+    for key in section_headers:
+        for header in section_headers[key]:
+            section_str += f'#{generate_hash(header)} [{header.replace("#","").strip()}]({generate_link(section["path"])}#{generate_sub_link(header)})\n'
+            
+        section_str += "\n"
+    return section_str
+
+
+def build_markmap_with_link(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
+    """Build all content of markmap
+
+    Args:
+        list_structure_header (dict): All headers
+        flag_to_start (str, optional): Flag to know where insert the map. Defaults to "<!-- Map site start -->".
+        flag_to_end (str, optional): Flag to know where end the map. Defaults to "<!-- Map site end -->".
+
+    Returns:
+        str: All str of markmap of the folder
+    """
+    
     map_init = "```markmap"
     map_end = "\n```"
 
@@ -87,7 +137,31 @@ def build_markmap(list_structure_header: dict, flag_to_start="<!-- Map site star
     content += f'{list_structure_header["structure_index_title"]["h1"][0]}\n\n'
 
     for structure in list_structure_header["list_structure"]:
-        content += build_section_markmap(structure)
+        content += build_section_markmap_with_link(structure)
+
+    content += f'\n{map_end}\n{flag_to_end}\n'
+    return content
+
+
+def build_markmap(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
+    """Build all content of markmap
+
+    Args:
+        list_structure_header (dict): All headers
+        flag_to_start (str, optional): Flag to know where insert the map. Defaults to "<!-- Map site start -->".
+        flag_to_end (str, optional): Flag to know where end the map. Defaults to "<!-- Map site end -->".
+
+    Returns:
+        str: All str of markmap of the folder
+    """
+    map_init = "```markmap"
+    map_end = "\n```"
+
+    content = f"\n{flag_to_start}\n{map_init}\n"
+    content += f'{list_structure_header["structure_index_title"]["h1"][0]}\n\n'
+
+    for structure in list_structure_header["list_structure"]:
+        content += build_section_markmap(structure['structure'])
 
     content += f'\n{map_end}\n{flag_to_end}\n'
     return content
@@ -280,7 +354,7 @@ def main():
                 structure_index_title = get_structure_with_hash(markdown)
                 continue
 
-            list_structure_md.append(get_structure_with_hash(markdown))
+            list_structure_md.append({"path":markdown ,"structure":get_structure_with_hash(markdown)})
 
         if file_path_index:
             print(file_path_index)
@@ -288,13 +362,14 @@ def main():
                 "index_file_path": file_path_index,
                 "list_structure": list_structure_md,
                 "structure_index_title": structure_index_title,
+                "base_dir": path
             }
 
             clear_map(file_path_index, flag_to_start=FLAG_START,
                       flag_to_end=FLAG_END)
             inject_map(
                 file_path_index, 
-                build_markmap(list_structure_header=map_one, flag_to_start=FLAG_START, flag_to_end=FLAG_END),
+                build_markmap_with_link(list_structure_header=map_one, flag_to_start=FLAG_START, flag_to_end=FLAG_END),
                 flag_to_insert=FLAG_TO_INSERT)
         else:
             print("=============== no have index.md, path:",
