@@ -1,2 +1,3 @@
 site/
 test/
+.mypy_cache

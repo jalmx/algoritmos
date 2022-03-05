@@ -1,5 +1,78 @@
 # Introducción a PSEINT
 
+## Mapa del sitio
+
+<!-- Map site insert -->
+
+<!-- Map site start -->
+```markmap
+# Introducción a PSEINT
+
+## Condicional if
+
+## Switch Case
+
+## Bucle Para (for)
+
+## Bucle Mientras (while)
+
+## Bucle Repetir (do-while)
+
+## Función Sin Retorno
+
+## Función Con Retorno
+
+
+
+```
+<!-- Map site end-->
+
+<!-- Map site start -->
+```markmap
+# Introducción a PSEINT
+
+## Condicional if
+
+## Switch Case
+
+## Bucle Para (for)
+
+## Bucle Mientras (while)
+
+## Bucle Repetir (do-while)
+
+## Función Sin Retorno
+
+## Función Con Retorno
+
+
+
+```
+<!-- Map site end-->
+
+<!-- Map site start -->
+```markmap
+# Introducción a PSEINT
+
+## Condicional if
+
+## Switch Case
+
+## Bucle Para (for)
+
+## Bucle Mientras (while)
+
+## Bucle Repetir (do-while)
+
+## Función Sin Retorno
+
+## Función Con Retorno
+
+
+
+```
+<!-- Map site end-->
+
 ## Comando de salida a la pantalla
 
 <font face="courier new" color="blue" size=3>Imprimir</font><font face="courier new" size=3> "expresion"</font> 

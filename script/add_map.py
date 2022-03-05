@@ -22,34 +22,38 @@ def clear_map(
     with open(path_file, "r+") as md:
         print("Clear file: ", path_file)
         for line in md.readlines():
-            if not line.find(FLAG_START):
+            if not line.find(FLAG_TO_INSERT):
                 break
-            content += line
+            content += f'{line}'
 
     with open(path_file, "w+") as md:
         md.writelines(content)
 
 
-def inject_map(file_path, content, **options): 
+def inject_map(file_path, content, **options):
     """Inject str markmap
 
     Args:
         file_path (Path): Full path document
-        content (str): All markmap to insert in file
+
+        for header in section[key]:
+            section_str += f"#{header}\n"
+        section_str += "\n"
+    return section_str
+      content (str): All markmap to insert in file
         **options : ["flag_to_start"] || ["header"]
     """
-    print(file_path)
-    content = ""
+    content_full = ""
     with open(file_path, "r") as md:
         for line in md.readlines():
-            print(line)
-            if not line.find(options["flag_to_insert"]):
-                break
-            content += line + "\n"
+            content_full += f'{line}'
             
+            if line.find(options["flag_to_insert"]) >= 0:
+                content_full += content
+                
     with open(file_path, "w+") as md:
-        md.writelines(content)
-        
+        md.writelines(content_full)
+
 
 def build_section_markmap(section: dict):
     """Build all markmap with the content from markdown structure, and add a hash before to build the sequence
@@ -64,22 +68,22 @@ def build_section_markmap(section: dict):
 
     for key in section:
         for header in section[key]:
-            section_str += f"#{header}\n"
+            section_str += f"#{header.strip()}\n"
         section_str += "\n"
     return section_str
 
 
-def build_markmap(list_structure_header: dict,flag_end="<!-- Map site end-->"):
+def build_markmap(list_structure_header: dict, flag_start="<!-- Map site start -->", flag_end="<!-- Map site end-->"):
     map_init = "```markmap"
     map_end = "\n```"
-
-    content = f"{map_init}\n\n"
+    
+    content = f"\n{flag_start}\n{map_init}\n"
     content += f'{list_structure_header["structure_index_title"]["h1"][0]}\n\n'
 
     for structure in list_structure_header["list_structure"]:
         content += build_section_markmap(structure)
 
-    content += map_end + flag_end
+    content += f'\n{map_end}\n{flag_end}\n'
     return content
 
 
@@ -248,12 +252,11 @@ def clean_list_folder(list_complete: list, list_exclude: list):
 if __name__ == "__main__":
 
     SECCION_TO_INSERT = "## Mapa del "
-    FLAG_TO_INSERT = "<!-- Map site insert-->"
-    FLAG_START = "<!-- Map site start-->"
-    
+    FLAG_TO_INSERT = "<!-- Map site insert -->"
+    FLAG_START = "<!-- Map site start -->"
 
-    PATH_TO_SEARCH = "../test/"
-    # path_file_get_title_map = os.path.abspath(PATH_TO_SEARCH + os.path.sep + "index.md")
+    PATH_TO_SEARCH = "../docs/"
+    
     paths_excludes = get_paths_abs(
         PATH_TO_SEARCH,
         "icons",
@@ -264,7 +267,7 @@ if __name__ == "__main__":
     )
 
     for path in clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes):
-        file_index = "index.md"
+        file_index = ""
         markmap = ""
         list_structure_md = []
         structure_index_title = None
@@ -276,13 +279,16 @@ if __name__ == "__main__":
 
             list_structure_md.append(get_structure_with_hash(markdown))
 
-        map_one = {
-            "index_file_path": file_index,
-            "list_structure": list_structure_md,
-            "structure_index_title": structure_index_title,
-        }
-        
-        inject_map(file_index, build_markmap(map_one), flag_to_insert=FLAG_START)
-        
-        
-        break
+        if file_index:
+            print(file_index)
+            map_one = {
+                "index_file_path": file_index,
+                "list_structure": list_structure_md,
+                "structure_index_title": structure_index_title,
+            }
+            
+            inject_map(file_index, build_markmap(map_one), flag_to_insert=FLAG_TO_INSERT)
+        else:
+            print("no have index.md, path:", path)
+
+

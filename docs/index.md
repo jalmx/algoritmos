@@ -10,7 +10,93 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 
 ## Mapa del sitio
 
-<!-- Map site insert-->
+<!-- Map site insert -->
+
+<!-- Map site start -->
+```markmap
+# Algoritmos
+
+## Algoritmos y Diagramas de Flujo
+
+### Definiciones
+### Algoritmo
+### Diagrama de flujo
+### Pseudocódigo
+
+#### Ejemplos
+
+## Simbología de Diagramas de flujos
+
+### Ejemplo de Diagrama de flujo
+
+## Estructura de un diagrama de flujo
+
+### Resumen
+
+## Variables
+
+### Que es una variable?
+### Qué es declarar una variable?
+### Cómo nombrar una variable?
+
+## Tipos de datos
+
+## Introducción a creación de Diagramas de flujo
+
+## Operadores aritméticos
+
+### Ejemplos:
+### Precedencia de operadores
+### Ejemplos
+### Ejercicios
+
+## Entradas y salidas
+
+### Entrada (Input)
+### Salida (Output)
+
+## Comparaciones o Decisiones (if)
+
+## Operadores de comparación o relación o para decisión
+
+### Sintaxis de comparación
+### Ejemplos de comparación
+### Ejemplos
+
+## Comparaciones o Decisiones (if-else)
+
+### Ejemplos
+
+## Operadores lógicos
+
+### Las tablas de verdad de los operadores:
+### Ejemplos
+
+#### AND (Y)
+#### OR (O)
+#### NOT (NO) (Inverter)
+#### Sintaxis con operadores lógicos
+#### Ejemplos de comparación
+
+## Ciclos (Loops) (for, while)
+
+### Ejemplos de ciclos en la vida
+### La variable auxiliar
+### Ejemplos
+
+## Bibliografía
+
+## Ejercicios de Algoritmos
+
+### Básicos
+### Decisiones
+### Operadores lógicos
+### Ciclos
+
+
+
+```
+<!-- Map site end-->
 
 ## Herramientas utilizadas 
 

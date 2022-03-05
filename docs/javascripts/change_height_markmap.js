@@ -1,8 +1,10 @@
-markmaps = document.getElementsByClassName("mkdocs-markmap");
+;
+document.addEventListener("DOMContentLoaded",function(){
+    markmaps = document.querySelectorAll(".mkdocs-markmap");
 
-if (markmaps){
-    markmaps.forEach(map => {
-        console.log(map)        
-    });
-}
+    for (let i = 0; i < markmaps.length ; i++){
+        markmaps[i].style.heigth = parseFloat(markmaps[i].offsetHeight) * 3
+        
+    }
+});
 
