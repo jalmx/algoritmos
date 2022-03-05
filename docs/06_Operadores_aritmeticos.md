@@ -25,7 +25,7 @@ Residuo o Módulo| % | Realiza la operación de división aritmética y devuelve
 - El único símbolo para **multiplicación** es el asterisco (\*), no existe algun otro ni ninguno más sirve para multiplicar.
 - **Los paréntesis** "( )" solo agrupan y nada mas. **No sirven para multiplicar**. 
 
-## Ejemplos:
+## Ejemplos
 
 **1. Realizar la multiplicación de dos numeros que ingrese el usuario e imprimir el resultado por pantalla**
 

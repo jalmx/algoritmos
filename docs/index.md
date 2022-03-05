@@ -2,11 +2,6 @@
 
 Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.com/), enfocado al aprendizaje de algoritmos y diagramas de flujo;  para el **Módulo III**: **_______**, del **Submódulo II: Utiliza y programa tarjetas de control para sistemas mecatrónicos**.
 
-^^Cualquier detalle, mejora, corrección o error notificarme a mi correo^^: al correo [alejandro.leyva.us@gmail.com](mailto:alejandro.leyva.us@gmail.com), o en su defecto hacer un pull-request al [repositorio](https://github.com/jalmx/algoritmos)
-
-**Para navegar utilizar el menu de lado izquierdo**
-
-[Iniciar ->](00_Algoritmos.md)
 
 ## Mapa del sitio
 
@@ -16,97 +11,90 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 ```markmap
 # Algoritmos
 
-## Algoritmos y Diagramas de Flujo
+## [Algoritmos y Diagramas de Flujo](00_Algoritmos#algoritmos-y-diagramas-de-flujo)
 
-### Definiciones
-### Algoritmo
-### Diagrama de flujo
-### Pseudocódigo
+### [Definiciones](00_Algoritmos#definiciones)
+### [Algoritmo](00_Algoritmos#algoritmo)
+### [Diagrama de flujo](00_Algoritmos#diagrama-de-flujo)
+### [Pseudocódigo](00_Algoritmos#pseudocodigo)
 
-#### Ejemplos
+#### [Ejemplos](00_Algoritmos#ejemplos)
 
-## Simbología de Diagramas de flujos
+## [Simbología de Diagramas de flujos](01_simbolos#simbologia-de-diagramas-de-flujos)
 
-### Ejemplo de Diagrama de flujo
+### [Ejemplo de Diagrama de flujo](01_simbolos#ejemplo-de-diagrama-de-flujo)
 
-## Estructura de un diagrama de flujo
+## [Estructura de un diagrama de flujo](02_Estructura_de_un_diagrama_de_flujo#estructura-de-un-diagrama-de-flujo)
 
-### Resumen
+### [Resumen](02_Estructura_de_un_diagrama_de_flujo#resumen)
 
-## Variables
+## [Variables](03_Variables#variables)
 
-### Que es una variable?
-### Qué es declarar una variable?
-### Cómo nombrar una variable?
+### [Que es una variable?](03_Variables#que-es-una-variable?)
+### [Qué es declarar una variable?](03_Variables#que-es-declarar-una-variable?)
+### [Cómo nombrar una variable?](03_Variables#como-nombrar-una-variable?)
 
-## Tipos de datos
+## [Tipos de datos](04_tipos_datos#tipos-de-datos)
 
-## Introducción a creación de Diagramas de flujo
+## [Introducción a creación de Diagramas de flujo](05_Introduccion_diagramas#introduccion-a-creacion-de-diagramas-de-flujo)
 
-## Operadores aritméticos
+## [Operadores aritméticos](06_Operadores_aritmeticos#operadores-aritmeticos)
 
-### Ejemplos:
-### Precedencia de operadores
-### Ejemplos
-### Ejercicios
+### [Ejemplos](06_Operadores_aritmeticos#ejemplos)
+### [Precedencia de operadores](06_Operadores_aritmeticos#precedencia-de-operadores)
+### [Ejemplos](06_Operadores_aritmeticos#ejemplos)
+### [Ejercicios](06_Operadores_aritmeticos#ejercicios)
 
-## Entradas y salidas
+## [Entradas y salidas](07_entradas_salidas#entradas-y-salidas)
 
-### Entrada (Input)
-### Salida (Output)
+### [Entrada (Input)](07_entradas_salidas#entrada-input)
+### [Salida (Output)](07_entradas_salidas#salida-output)
 
-## Comparaciones o Decisiones (if)
+## [Comparaciones o Decisiones (if)](08_decisiones_if#comparaciones-o-decisiones-if)
 
-## Operadores de comparación o relación o para decisión
+## [Operadores de comparación o relación o para decisión](09_operadores_comparacion#operadores-de-comparacion-o-relacion-o-para-decision)
 
-### Sintaxis de comparación
-### Ejemplos de comparación
-### Ejemplos
+### [Sintaxis de comparación](09_operadores_comparacion#sintaxis-de-comparacion)
+### [Ejemplos de comparación](09_operadores_comparacion#ejemplos-de-comparacion)
+### [Ejemplos](09_operadores_comparacion#ejemplos)
 
-## Comparaciones o Decisiones (if-else)
+## [Comparaciones o Decisiones (if-else)](10_decisiones_if_else#comparaciones-o-decisiones-if-else)
 
-### Ejemplos
+### [Ejemplos](10_decisiones_if_else#ejemplos)
 
-## Operadores lógicos
+## [Operadores lógicos](11_operadores_logicos#operadores-logicos)
 
-### Las tablas de verdad de los operadores:
-### Ejemplos
+### [Las tablas de verdad de los operadores:](11_operadores_logicos#las-tablas-de-verdad-de-los-operadores:)
+### [Ejemplos](11_operadores_logicos#ejemplos)
 
-#### AND (Y)
-#### OR (O)
-#### NOT (NO) (Inverter)
-#### Sintaxis con operadores lógicos
-#### Ejemplos de comparación
+#### [AND (Y)](11_operadores_logicos#and-y)
+#### [OR (O)](11_operadores_logicos#or-o)
+#### [NOT (NO) (Inverter)](11_operadores_logicos#not-no-inverter)
+#### [Sintaxis con operadores lógicos](11_operadores_logicos#sintaxis-con-operadores-logicos)
+#### [Ejemplos de comparación](11_operadores_logicos#ejemplos-de-comparacion)
 
-## Ciclos (Loops) (for, while)
+## [Ciclos (Loops) (for, while)](12_ciclos#ciclos-loops-for,-while)
 
-### Ejemplos de ciclos en la vida
-### La variable auxiliar
-### Ejemplos
+### [Ejemplos de ciclos en la vida](12_ciclos#ejemplos-de-ciclos-en-la-vida)
+### [La variable auxiliar](12_ciclos#la-variable-auxiliar)
+### [Ejemplos](12_ciclos#ejemplos)
 
-## Bibliografía
+## [Herramientas utilizadas](99999_tools#herramientas-utilizadas)
 
-## Ejercicios de Algoritmos
+## [Bibliografía](9999_bibliografia#bibliografia)
 
-### Básicos
-### Decisiones
-### Operadores lógicos
-### Ciclos
+## [Ejercicios de Algoritmos](999_algoritmos_ejercicios#ejercicios-de-algoritmos)
+
+### [Básicos](999_algoritmos_ejercicios#basicos)
+### [Decisiones](999_algoritmos_ejercicios#decisiones)
+### [Operadores lógicos](999_algoritmos_ejercicios#operadores-logicos)
+### [Ciclos](999_algoritmos_ejercicios#ciclos)
 
 
 
 ```
-<!-- Map site end-->
+<!-- Map site end -->
 
-## Herramientas utilizadas 
-
-- [Python](https://www.python.org): Scripts de automatización
-- [markmap](https://markmap.js.org): Mapas mentales
-- [drawio](https://app.diagrams.net): Simbología y diagramas
-- [MkDocs](https://www.mkdocs.org): Para la construcción base del sitio
-- [MkDocs Material](https://squidfunk.github.io/mkdocs-material/): Para el tema y los plugins
-- [PSeint](http://pseint.sourceforge.net): Pseudocódigo y diagramas de flujo
-
-
+^^Cualquier detalle, mejora, corrección o error notificarme a mi correo^^: al correo [alejandro.leyva.us@gmail.com](mailto:alejandro.leyva.us@gmail.com), o en su defecto hacer un pull-request al [repositorio](https://github.com/jalmx/algoritmos)
 
 <!-- text autogenerated footer --> <p>Facebook <a href="https://www.facebook.com/mecatronica85/" target="_blank">Mecatrónica 85</a></p><p>Realizado por <a href="https://www.alejandro-leyva.com" target="_blank">Alejandro Leyva</a></p>
