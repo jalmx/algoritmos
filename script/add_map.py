@@ -96,7 +96,7 @@ def build_section_markmap_with_link(section: dict):
         return txt.translate(trans)
 
     def generate_sub_link(link):        
-        return clean_accent(link.lower()).replace("#","").strip().replace(" ","-").replace("(","").replace(")","")
+        return clean_accent(link.lower()).replace("#","").strip().replace(" ","-").replace("(","").replace(")","").replace(":","").lower()
     
     def generate_hash(header:str):
         return header.count("#") * "#"

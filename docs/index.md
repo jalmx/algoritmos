@@ -36,6 +36,8 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 
 ## [Tipos de datos](04_tipos_datos#tipos-de-datos)
 
+### [Ejemplos](04_tipos_datos#ejemplos)
+
 ## [Introducción a creación de Diagramas de flujo](05_Introduccion_diagramas#introduccion-a-creacion-de-diagramas-de-flujo)
 
 ## [Operadores aritméticos](06_Operadores_aritmeticos#operadores-aritmeticos)
@@ -64,7 +66,7 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 
 ## [Operadores lógicos](11_operadores_logicos#operadores-logicos)
 
-### [Las tablas de verdad de los operadores:](11_operadores_logicos#las-tablas-de-verdad-de-los-operadores:)
+### [Las tablas de verdad de los operadores:](11_operadores_logicos#las-tablas-de-verdad-de-los-operadores)
 ### [Ejemplos](11_operadores_logicos#ejemplos)
 
 #### [AND (Y)](11_operadores_logicos#and-y)
@@ -95,7 +97,8 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 ```
 <!-- Map site end -->
 
-^^Cualquier detalle, mejora, corrección o error notificarme a mi correo^^: al correo [alejandro.leyva.us@gmail.com](mailto:alejandro.leyva.us@gmail.com), o en su defecto hacer un pull-request al [repositorio](https://github.com/jalmx/algoritmos)
+
+^^Cualquier detalle, mejora, corrección o error notificarme a mi correo^^: [alejandro.leyva.us@gmail.com](mailto:alejandro.leyva.us@gmail.com), o en su defecto hacer un pull-request al [repositorio](https://github.com/jalmx/algoritmos)
 
 
 
