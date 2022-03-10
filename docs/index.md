@@ -98,6 +98,7 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 <!-- Map site end -->
 
 
+
 ^^Cualquier detalle, mejora, corrección o error notificarme a mi correo^^: [alejandro.leyva.us@gmail.com](mailto:alejandro.leyva.us@gmail.com), o en su defecto hacer un pull-request al [repositorio](https://github.com/jalmx/algoritmos)
 
 

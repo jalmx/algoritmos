@@ -32,6 +32,7 @@
 
 
 
+
 ## Comando de salida a la pantalla
 
 <font face="courier new" color="blue" size=3>Imprimir</font><font face="courier new" size=3> "expresion"</font> 

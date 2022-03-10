@@ -270,8 +270,7 @@ def get_paths_abs(base_dir, *args):
         List: List with all paths from folders
     """
 
-    paths = [os.path.abspath(f"{base_dir}{os.path.sep}{path}")
-             for path in args]
+    paths = [os.path.abspath(f"{base_dir}{os.path.sep}{path}") for path in args]
 
     return sorted(set(paths))
 
@@ -295,7 +294,7 @@ def get_all_folders(path):
     if not (os.path.abspath(path) is list_dir):
         list_dir.append(os.path.abspath(path))
 
-    return sorted(list(set(list_dir)))
+    return sorted(set(list_dir))
 
 
 def clean_list_folder(list_complete: list, list_exclude: list):
