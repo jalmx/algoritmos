@@ -7,7 +7,7 @@ author: Alejandro Leyva
 
 # Operadores aritméticos
 
-En esta sección veremos los operadores aritméticos básicos que podemos encontrar en la mayoria de lenguajes.
+En esta sección veremos los operadores aritméticos básicos que podemos encontrar en la mayoría de lenguajes.
 
 Nombre | Símbolo | Descripción
 :-|:-:|:-

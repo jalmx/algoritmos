@@ -1,6 +1,6 @@
 # Variables
 
-## Que es una variable?
+## ¿Qué es una variable?
 
 Una variable desde el punto de vista computacional, es un espacio en memoria. 
 
