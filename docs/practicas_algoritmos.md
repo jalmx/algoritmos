@@ -76,7 +76,7 @@ Los siguientes ejercicios se debe aplicar ciclos, de lo contrario no se toma cor
    | Igual a 10             | "Excelente, tu muy bien"                  |
    | Menor a 0 y mayor a 10 | "Calificación no posible"                 |
 4. Cálculo de BMI (Indice de Masa Corporal) para peso y altura, indicando cual es tu BMI y en que nivel de obesidad te encuentras (*Ver tabla*). La formula es $BMI = peso (kg) * estatura^2 (cm)$
-   
+      
       | IMC                | Nivel de peso |
       | ------------------ | ------------- |
       | Por debajo de 18.5 | Bajo peso     |
