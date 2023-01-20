@@ -1,5 +1,5 @@
 ---
-title: Practicas
+title: Practicas - Parcial 2
 author: Alejandro Leyva
 ---
 

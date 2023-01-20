@@ -13,7 +13,7 @@ author: Alejandro Leyva
 2. Realizar el cálculo del perímetro de un rectángulo, solicitando el lado de la figura al usuario, e imprimir el resultado
 3. Realizar el cálculo del area de un cuadrado, solicitando el lado de la figura al usuario, e imprimir el resultado
 4. Realizar un programa que realice el cálculo de Fuerza en la segunda Ley de Newton. La formula es ==$Fuerza = masa * aceleración$==. Solicitando el lado de la figura al usuario, e imprimir el resultado
-5. Realizar una calculadora que convierta de centímetros a pulgadas,  solicitando el lado de la figura al usuario, e imprimir el resultado
+5. Realizar una calculadora que convierta de centímetros a pulgadas, solicitando el dato al usuario, e imprimir el resultado
 
 ## Decisiones
 
@@ -32,13 +32,14 @@ author: Alejandro Leyva
    - Calcular potencia
    - Con opción de salir del programa y al final debe imprimir el resultado con la frase "El resultado es: "
 
-5. Que resuelva una ecuación de segundo orden, aplicando la fórmula general; recuerda que no existen las raíces negativas. Debe entregarte los valores de las raíces o en caso que alguna o ninguna raíz exista, indicarlo. *==Nota: Debes usar las funciones matemáticas que vienen en el lenguaje==*
+5. Que resuelva una ecuación de segundo orden, aplicando la fórmula general; recuerda que no existen las raíces negativas. Debe entregarle los valores de las raíces o en caso que alguna o ninguna raíz exista, indicarlo. *==Nota: Debes usar las funciones matemáticas que vienen en el lenguaje==*
 6. Realizar una calculadora del Teorema de Pitágoras, el usuario debe elegir, cateto opuesto, adyacente o hipotenusa, salir, que desear calcular. *==Nota: Debes usar las funciones matemáticas que vienen en el lenguaje==*
 7. Hacer una caja registradora, que reciba el valor del producto y al final entregue el costo total con IVA y sin IVA; es decir, En total es *\$18.35* y con IVA son *\$21.28*, recordar que el IVA es del *16%*
 
 ## Operadores lógicos
 
 1. Solicitar al usuario su promedio actual, en valor entero, el algoritmo debe tomar la decisión con basé al número ingresado, y dar un mensaje (ver la tabla)
+   
    | Rango de calificación  | Mensaje a imprimir                        |
    | ---------------------- | ----------------------------------------- |
    | 0 a menor que 6        | "lastima margarito"                       |
@@ -56,6 +57,19 @@ author: Alejandro Leyva
       | 18.5 – 24.9        | Normal        |
       | 25.0 – 29.9        | Sobrepeso     |
       | 30.0 o más         | Obesidad      |
+3. Mandar la letra del múltiplo o submultiple correspondiente, es decir, si el usuario ingresa el valor de 1,000, el valor que se debe desplegar por pantalla es la letra "K", si el usuario ingresa el valor de 0.02, se debe desplegar por pantalla la letra "m"
+      
+      | Unidad | Símbolo | Rango       |
+      | ------ | ------- | ----------- |
+      | pico   | p       | $x10^{-12}$ |
+      | nano   | n       | $x10^{-}$   |
+      | micro  | u       | $x10^{-6}$  |
+      | mili   | m       | $x10^{-3}$  |
+      | unidad |         |             |
+      | kilo   | K       | $x10^{3}$   |
+      | mega   | M       | $x10^{6}$   |
+      | giga   | G       | $x10^{9}$   |
+
 
 ## Ciclos `while` y `for`
 
