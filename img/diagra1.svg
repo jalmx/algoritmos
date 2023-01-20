@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="280.84mm" height="110.08mm" version="1.1" viewBox="0 0 280.84 110.08" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Mend" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend-3" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend-9" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend-3-2" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend-3-6" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend-3-6-9" overflow="visible" orient="auto">
+   <path transform="matrix(-.4 0 0 -.4 -4 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(4.2831 -61.908)">
+  <g fill="#000000" font-family="sans-serif" font-size="10.583px" stroke-width=".26458">
+   <text x="0.81743085" y="88.010086" style="line-height:1.25" xml:space="preserve"><tspan x="0.81743085" y="88.010086" stroke-width=".26458">pastel($5)</tspan></text>
+   <text x="82.488419" y="69.949066" style="line-height:1.25" xml:space="preserve"><tspan x="82.488419" y="69.949066" stroke-width=".26458">chocolate($2)</tspan></text>
+   <text x="82.757133" y="87.276611" style="line-height:1.25" xml:space="preserve"><tspan x="82.757133" y="87.276611" stroke-width=".26458">vainilla($1)</tspan></text>
+   <text x="-4.8670683" y="152.23714" style="line-height:1.25" xml:space="preserve"><tspan x="-4.8670683" y="152.23714" stroke-width=".26458">cupcake($3)</tspan></text>
+   <text x="82.111183" y="104.60415" style="line-height:1.25" xml:space="preserve"><tspan x="82.111183" y="104.60415" stroke-width=".26458">natural($0)</tspan></text>
+   <text x="190.95903" y="70.128105" style="line-height:1.25" xml:space="preserve"><tspan x="190.95903" y="70.128105" stroke-width=".26458">chispas(0.5)</tspan></text>
+   <text x="191.22775" y="87.45565" style="line-height:1.25" xml:space="preserve"><tspan x="191.22775" y="87.45565" stroke-width=".26458">chocolate($1)</tspan></text>
+   <text x="190.58179" y="104.78319" style="line-height:1.25" xml:space="preserve"><tspan x="190.58179" y="104.78319" stroke-width=".26458">ninguno($0)</tspan></text>
+   <text x="193.99081" y="134.36464" style="line-height:1.25" xml:space="preserve"><tspan x="193.99081" y="134.36464" stroke-width=".26458">chispas(0.5)</tspan></text>
+   <text x="194.25954" y="151.69218" style="line-height:1.25" xml:space="preserve"><tspan x="194.25954" y="151.69218" stroke-width=".26458">chocolate($1.5)</tspan></text>
+   <text x="193.61357" y="169.01973" style="line-height:1.25" xml:space="preserve"><tspan x="193.61357" y="169.01973" stroke-width=".26458">ninguno($0)</tspan></text>
+   <text x="88.404076" y="135.77753" style="line-height:1.25" xml:space="preserve"><tspan x="88.404076" y="135.77753" stroke-width=".26458">chocolate($2)</tspan></text>
+   <text x="88.74514" y="153.10507" style="line-height:1.25" xml:space="preserve"><tspan x="88.74514" y="153.10507" stroke-width=".26458">fresa($4)</tspan></text>
+   <text x="88.02684" y="170.43262" style="line-height:1.25" xml:space="preserve"><tspan x="88.02684" y="170.43262" stroke-width=".26458">natural($1)</tspan></text>
+  </g>
+  <g fill="none" stroke="#000">
+   <path d="m58.292 83.033 21.878-14.543" marker-end="url(#Arrow1Mend)" stroke-width=".73194"/>
+   <path d="m58.292 87.841 21.878 14.543" marker-end="url(#Arrow1Mend)" stroke-width=".73194"/>
+   <path d="m58.533 85.963 24.047-0.46527" marker-end="url(#Arrow1Mend-3)" stroke-width=".79375"/>
+   <path d="m142.29 84.184 28.286-0.46527" marker-end="url(#Arrow1Mend-3-6)" stroke-width=".79375"/>
+   <path d="m62.379 146.64 21.878-14.543" marker-end="url(#Arrow1Mend-9)" stroke-width=".73194"/>
+   <path d="m62.379 151.45 21.878 14.543" marker-end="url(#Arrow1Mend-9)" stroke-width=".73194"/>
+   <path d="m62.62 149.57 24.047-0.46527" marker-end="url(#Arrow1Mend-3-2)" stroke-width=".79375"/>
+  </g>
+  <g transform="matrix(3.4531 0 0 4.3339 -434.46 -329.85)" stroke-width=".26458" aria-label="{">
+   <path d="m179.97 99.629v0.74414h-0.3204q-1.2867 0-1.726-0.3824-0.43408-0.3824-0.43408-1.5244v-1.2351q0-0.78031-0.27906-1.08-0.27905-0.29972-1.0128-0.29972h-0.31523v-0.73897h0.31523q0.73897 0 1.0128-0.29455 0.27906-0.29972 0.27906-1.0697v-1.2402q0-1.142 0.43408-1.5193 0.43925-0.3824 1.726-0.3824h0.3204v0.73897h-0.3514q-0.72864 0-0.95084 0.22738-0.22221 0.22738-0.22221 0.95601v1.2816q0 0.81132-0.23771 1.1782-0.23255 0.3669-0.80099 0.49609 0.57361 0.13953 0.80615 0.50643 0.23255 0.3669 0.23255 1.1731v1.2816q0 0.72864 0.22221 0.95601 0.2222 0.22738 0.95084 0.22738z"/>
+  </g>
+  <path d="m149.59 148.15 24.047-0.46528" fill="none" marker-end="url(#Arrow1Mend-3-6-9)" stroke="#000" stroke-width=".79375"/>
+  <g transform="matrix(3.4531 0 0 4.3339 -431.53 -265.89)" stroke-width=".26458" aria-label="{">
+   <path d="m179.97 99.629v0.74414h-0.3204q-1.2867 0-1.726-0.3824-0.43408-0.3824-0.43408-1.5244v-1.2351q0-0.78031-0.27906-1.08-0.27905-0.29972-1.0128-0.29972h-0.31523v-0.73897h0.31523q0.73897 0 1.0128-0.29455 0.27906-0.29972 0.27906-1.0697v-1.2402q0-1.142 0.43408-1.5193 0.43925-0.3824 1.726-0.3824h0.3204v0.73897h-0.3514q-0.72864 0-0.95084 0.22738-0.22221 0.22738-0.22221 0.95601v1.2816q0 0.81132-0.23771 1.1782-0.23255 0.3669-0.80099 0.49609 0.57361 0.13953 0.80615 0.50643 0.23255 0.3669 0.23255 1.1731v1.2816q0 0.72864 0.22221 0.95601 0.2222 0.22738 0.95084 0.22738z"/>
+  </g>
+ </g>
+</svg>
