@@ -22,7 +22,7 @@ Residuo o Módulo| % | Realiza la operación de división aritmética y devuelve
 *Precauciones que debemos tener en cuenta son:*
 
 - El único símbolo que podemos ocupar para la **división** es la diagonal o slash (/), no existe otro símbolo ni tampoco se puede ocupar los tradicionales que conocemos.
-- El único símbolo para **multiplicación** es el asterisco (\*), no existe algun otro ni ninguno más sirve para multiplicar.
+- El único símbolo para **multiplicación** es el asterisco (\*), no existe algún otro ni ninguno más sirve para multiplicar.
 - **Los paréntesis** "( )" solo agrupan y nada mas. **No sirven para multiplicar**. 
 
 ## Ejemplos
@@ -37,7 +37,7 @@ Después de mandar el mensaje, debemos recibir y almacenar ese valor. Por lo tan
 
 ![paso2](./img/e3_p3.png)
 
-Una vez que ya tenemos el primer valor almacenado en memoria, vamos a mandar otro mensaje indicándole al usuario qué debe realizar. El mensaje será `"Dar el segundo valor a multiplciar"`
+Una vez que ya tenemos el primer valor almacenado en memoria, vamos a mandar otro mensaje indicándole al usuario qué debe realizar. El mensaje será `"Dar el segundo valor a multiplicar"`
 
 ![paso2](./img/e3_p4.png)
 

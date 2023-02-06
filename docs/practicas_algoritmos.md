@@ -3,7 +3,7 @@
 
 ## Básicos
 
-1. Realizar un programa que realice el cálculo de Fuerza en la segunda Ley de Newton. La formula es ==$Fuerza = masa * aceleración$==. Solicitando el lado de la figura al usuario, e imprimir el resultado
+1. Realizar un programa que realice el cálculo de Fuerza en la segunda Ley de Newton. La formula es ==$Fuerza = masa * aceleración$==. Solicitando los valores de masa y aceleración, e imprimir el resultado de la fuerza.
 2. Realizar una calculadora que convierta de centímetros a pulgadas, solicitando el dato al usuario, e imprimir el resultado
 3. Hacer una calculadora de áreas geométricas, las opciones son:
       - Área del cuadrado
@@ -55,7 +55,7 @@ Los siguientes ejercicios se debe aplicar ciclos, de lo contrario no se toma cor
 4. Leer 10 números, solicitando uno a uno al usuario, y al final se imprime por pantalla el número más alto ingresado de los 10.
 5. Cálculo de la media de un conjunto de datos. Se le pregunta al usuario cuantos números son, comienza a pedirlos uno a uno y al final imprime el resultado de la media de todos los datos.
 6. Cálculo de la media de un conjunto de datos positivos. En cada iteración pregunta al usuario si quiere terminar para conocer el resultado o ingresar otro valor. Cuando elija terminar, imprimir el valor total del promedio o media.
-7. Imprimir la tabla de multiplicar que el usuario elija y también el usuario elije hasta que numero termina. Es decir, si da quiere la tabla del 15, y quiere ver hasta el 200, pues la ultima operacion que vea por pantalla sera *15x200=3000*
+7. Imprimir la tabla de multiplicar que el usuario elija y también el usuario elije hasta que numero termina. Es decir, si da quiere la tabla del 15, y quiere ver hasta el 200, pues la ultima operación que vea por pantalla sera *15x200=3000*
 8. Algoritmo para convertir número decimal a binario, debe ir mostrando el numero en binario uno a uno, no es todo el numero binario completo, comenzando por el bit mas significativo. Por ejemplo el usuario ingresa el valor de 5, debe imprimir 101. Dado que 5 en binario es 101. Estos no son necesarios entregar, es para poner a prueba conocimientos
 9. Una pasteleria nos solicita realizar un programa para una maquina de pastelitos, las opciones son las siguientes
 

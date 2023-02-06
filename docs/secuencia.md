@@ -40,6 +40,7 @@
 38. Ejercicio: Imprimir la tabla de multiplicar que el usuario elija, del 1 al 10
 39. Calcular el factorial de un número entero. Se le solicita al usuario que ingrese un número entero el cuál quiere calcular el factorial del mismo. ==Ejemplo: 5! = 120==
 40. Obtener el promedio de 3 materias, solicitando cada materia e imprimir el resultado
-41. Ejercicio: Promedio de 3 parciales, y si saco entre 0 a menor que 6, indicar que no paso, y se va a recursamiento, si saco entre 6 a 10, indicar que paso. Si da un calificación que no existe, indicar que no existe
-42. 
-
+41. Ejercicio: Promedio de 3 parciales (con un ciclo), y si saco entre 0 a menor que 6, indicar que no paso, y se va a recursamiento, si saco entre 6 a 10, indicar que paso. Si da un calificación que no existe, indicar que no existe
+42. Realizar una calculadora de para resistencia en seria, la cantidad de resistencias es ilimitada, el usuario decide cuando debe parar la solicitud de valores, es decir, para detener el programa se debe dar el valor de -1.
+43. Realizar una calculadora de serie y paralelo, el usuario cual elije, la solicitud es infinita, hasta que le usuario decide cuando terminar, la opción de salir es -1.
+44. 
