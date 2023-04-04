@@ -27,7 +27,7 @@
 25. Ejercicio: Calculo de resistencia en serie y paralelo, 2 valores
 26. Operadores lógicos
 27. Ejercicio: Coca y gansito, si hay ambos, "tendré desayuno", de lo contrario "sera pato a la orange"
-28. Ejercicio: Solicitar una calificación al usuario de alguna materia, en caso de un valor de 0 a menor a 6, decir, "no haz aprobado", en caso que haya sacado de 6 a 10, decir, "aprobaste", en caso que no este en estos rangos, decir, "La calificación no es posible"
+28. Ejercicio: Solicitar una calificación al usuario de alguna materia, en caso de un valor de 0 a menor a 6, decir, "no has aprobado", en caso que haya sacado de 6 a 10, decir, "aprobaste", en caso que no este en estos rangos, decir, "La calificación no es posible"
 29.  Preguntar al usuario si le "gusta correr" y después si le "gusta nadar", si ambos casos responde que *si*, mandar el mensaje de que "es muy fitness", de lo contrario "deberías hacer más ejercicio" (Operadores lógicos)
 30.  Ciclo, concepto del contador o variable auxiliar, ejemplo de que un alumno vaya abrir la puerta n veces o que un alumno haga n sentadillas y los demás cuenten; estamos viendo el concepto de contador
 31. Ejemplo: Imprimir 5 veces la palabra "Hola"
