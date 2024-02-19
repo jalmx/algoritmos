@@ -8,7 +8,6 @@ edit_uri: ""
 theme:
   name: material
   locale: es
-  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)" 
       scheme: default
@@ -25,27 +24,29 @@ theme:
   language: es
   logo: icons/favicon.png
   favicon: icons/favicon.png
+  features:
+    - navigation.footer
+    - content.code.copy
 
 
 markdown_extensions:
   - tables
-  - meta
   - attr_list
   - md_in_html
   - footnotes
   - admonition
-  - pymdownx.details
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 
 extra_javascript:
@@ -54,35 +55,17 @@ extra_javascript:
   - javascripts/change_height_markmap.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://unpkg.com/d3@6.7.0/dist/d3.min.js
-  - https://unpkg.com/markmap-lib@0.11.6/dist/browser/index.min.js
-  - https://unpkg.com/markmap-view@0.2.6/dist/index.min.js
+  - https://unpkg.com/d3@7/dist/d3.min.js
+  - https://unpkg.com/markmap-lib@0.15.3/dist/browser/index.js
+  - https://unpkg.com/markmap-view@0.15.3/dist/browser/index.js
 
 extra:
   homepage: https://www.alejandro-leyva.com/algoritmos/
   version: 1.0
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-    feedback:
-      title: Fue util esta información?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >- 
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target=_blank>feedback form</a>.
   
-  copyright: "Alejandro Leyva 2022 - 2022"
+  copyright: "Alejandro Leyva"
 
   social:
-  
     - icon: fontawesome/brands/github
       link: https://github.com/jalmx
     - icon: fontawesome/brands/dev
@@ -100,5 +83,14 @@ plugins:
       indexing: 'full'
   - minify:
       minify_html: true
-  - tags
-  - markmap
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      cache_safe: true
+  - markmap:
+      base_path: docs
+      encoding: utf-8
+      d3_version: "7"
+      lib_version: "0.15.3"
+      view_version: "0.15.3"

@@ -1,14 +1,14 @@
 import os
 from pathlib import Path
 from urllib.parse import quote
-
-
 """
     Script to add create a markmap taking all files markdown and its subtitles
 """
 
 
-def clear_map(path_file, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"): 
+def clear_map(path_file,
+              flag_to_start="<!-- Map site start -->",
+              flag_to_end="<!-- Map site end -->"):
     """Replace old file with the content without link to download pdf
 
     Args:
@@ -16,21 +16,21 @@ def clear_map(path_file, flag_to_start="<!-- Map site start -->", flag_to_end="<
         flag_to_start (str): section inside to START the markdown where to put the map
         flag_to_end (str): section inside to END the markdown where to put the map
     """
-    
+
     content = ""
 
-    write= True
-    
+    write = True
+
     with open(path_file, "r+") as md:
         print("Clear file: ", path_file)
-        
+
         for line in md.readlines():
             if line.startswith(flag_to_start):
                 write = False
             if line.startswith(flag_to_end):
                 write = True
                 continue
-            
+
             if write:
                 content += f'{line}'
 
@@ -90,35 +90,39 @@ def build_section_markmap_with_link(section: dict):
     Returns:
         str: All markmap content to insert
     """
+
     def clean_accent(txt):
-        a,b = 'áéíóúüñÁÉÍÓÚÜÑ','aeiouunAEIOUUN'
-        trans = str.maketrans(a,b)
+        a, b = 'áéíóúüñÁÉÍÓÚÜÑ', 'aeiouunAEIOUUN'
+        trans = str.maketrans(a, b)
         return txt.translate(trans)
 
-    def generate_sub_link(link):        
-        return clean_accent(link.lower()).replace("#","").strip().replace(" ","-").replace("(","").replace(")","").replace(":","").lower()
-    
-    def generate_hash(header:str):
+    def generate_sub_link(link):
+        return clean_accent(link.lower()).replace("#", "").strip().replace(
+            " ", "-").replace("(", "").replace(")", "").replace(":",
+                                                                "").lower()
+
+    def generate_hash(header: str):
         return header.count("#") * "#"
-        
-    
-    def generate_link(path:str):
-        path = path.split("/")[-1].replace(".md","")
-        return  quote(path)
-        
+
+    def generate_link(path: str):
+        path = path.split("/")[-1].replace(".md", "")
+        return quote(path)
+
     section_str = ""
-    
+
     section_headers = section["structure"]
-        
+
     for key in section_headers:
         for header in section_headers[key]:
             section_str += f'#{generate_hash(header)} [{header.replace("#","").strip()}]({generate_link(section["path"])}#{generate_sub_link(header)})\n'
-            
+
         section_str += "\n"
     return section_str
 
 
-def build_markmap_with_link(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
+def build_markmap_with_link(list_structure_header: dict,
+                            flag_to_start="<!-- Map site start -->",
+                            flag_to_end="<!-- Map site end -->"):
     """Build all content of markmap
 
     Args:
@@ -129,7 +133,7 @@ def build_markmap_with_link(list_structure_header: dict, flag_to_start="<!-- Map
     Returns:
         str: All str of markmap of the folder
     """
-    
+
     map_init = "```markmap"
     map_end = "\n```"
 
@@ -143,7 +147,9 @@ def build_markmap_with_link(list_structure_header: dict, flag_to_start="<!-- Map
     return content
 
 
-def build_markmap(list_structure_header: dict, flag_to_start="<!-- Map site start -->", flag_to_end="<!-- Map site end -->"):
+def build_markmap(list_structure_header: dict,
+                  flag_to_start="<!-- Map site start -->",
+                  flag_to_end="<!-- Map site end -->"):
     """Build all content of markmap
 
     Args:
@@ -222,7 +228,7 @@ def get_structure_with_hash(path_file):
 
 
 def get_all_md(path):
-    """get alls files markdown from folder and subfolders
+    """get alls files markdown from folder and subfolder
 
     Args:
         path (Path): path for to search files md
@@ -252,8 +258,7 @@ def get_all_md_from_folder(path):
     """
 
     list_md = [
-        os.path.abspath(file)
-        for file in (Path(path).iterdir())
+        os.path.abspath(file) for file in (Path(path).iterdir())
         if file.is_file() and str(file).endswith(".md")
     ]
 
@@ -270,7 +275,9 @@ def get_paths_abs(base_dir, *args):
         List: List with all paths from folders
     """
 
-    paths = [os.path.abspath(f"{base_dir}{os.path.sep}{path}") for path in args]
+    paths = [
+        os.path.abspath(f"{base_dir}{os.path.sep}{path}") for path in args
+    ]
 
     return sorted(set(paths))
 
@@ -314,7 +321,8 @@ def clean_list_folder(list_complete: list, list_exclude: list):
 
     # create a list with paths with wildcard
     list_wildcard = [
-        exclude.replace("/*", "") for exclude in list_exclude if exclude.count("*")
+        exclude.replace("/*", "") for exclude in list_exclude
+        if exclude.count("*")
     ]
 
     for path in list_complete:
@@ -345,7 +353,8 @@ def main():
         "extras/*",
     )
 
-    for path in clean_list_folder(get_all_folders(PATH_TO_SEARCH), paths_excludes):
+    for path in clean_list_folder(get_all_folders(PATH_TO_SEARCH),
+                                  paths_excludes):
         file_path_index = ""
         markmap = ""
         list_structure_md = []
@@ -356,7 +365,12 @@ def main():
                 structure_index_title = get_structure_with_hash(markdown)
                 continue
 
-            list_structure_md.append({"path":markdown ,"structure":get_structure_with_hash(markdown)})
+            list_structure_md.append({
+                "path":
+                markdown,
+                "structure":
+                get_structure_with_hash(markdown)
+            })
 
         if file_path_index:
             print(file_path_index)
@@ -367,15 +381,17 @@ def main():
                 "base_dir": path
             }
 
-            clear_map(file_path_index, flag_to_start=FLAG_START,
+            clear_map(file_path_index,
+                      flag_to_start=FLAG_START,
                       flag_to_end=FLAG_END)
-            inject_map(
-                file_path_index, 
-                build_markmap_with_link(list_structure_header=map_one, flag_to_start=FLAG_START, flag_to_end=FLAG_END),
-                flag_to_insert=FLAG_TO_INSERT)
+            inject_map(file_path_index,
+                       build_markmap_with_link(list_structure_header=map_one,
+                                               flag_to_start=FLAG_START,
+                                               flag_to_end=FLAG_END),
+                       flag_to_insert=FLAG_TO_INSERT)
         else:
-            print("=============== no have index.md, path:",
-                  path, "===============================")
+            print("=============== no have index.md, path:", path,
+                  "===============================")
 
 
 if __name__ == "__main__":

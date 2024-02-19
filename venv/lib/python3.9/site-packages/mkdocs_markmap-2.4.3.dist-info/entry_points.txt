@@ -1,0 +1,6 @@
+[markdown.extensions]
+markmap = mkdocs_markmap.extension:MarkmapExtension
+
+[mkdocs.plugins]
+markmap = mkdocs_markmap.plugin:MarkmapPlugin
+

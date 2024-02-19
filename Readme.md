@@ -1,15 +1,23 @@
-# Site 
+# Documentacion para estudiar Algoritmos 
+
+## Run in local
+
+1. Create virtual environment
+2. Activate `venv`
+3. Install poetry
+4. run: `poertry install --no-root`
+5. Then, run `poertry run mkdocs serve`
 
 [Go to site](https://www.alejandro-leyva.com/algoritmos/)
 
 - `markmap`: For mindmaps
 
 
-## Herramientas utilizadas 
+## Tools used
 
-- [Python](https://www.python.org): Scripts de automatización
-- [markmap](https://markmap.js.org): Mapas mentales
-- [drawio](https://app.diagrams.net): Simbología y diagramas
-- [MkDocs](https://www.mkdocs.org): Para la construcción base del sitio
-- [MkDocs Material](https://squidfunk.github.io/mkdocs-material/): Para el tema y los plugins
-- [PSeint](http://pseint.sourceforge.net): Pseudocódigo y diagramas de flujo
+- [Python](https://www.python.org): Scripts automation
+- [markmap](https://markmap.js.org): Mind map
+- [drawio](https://app.diagrams.net): Simbols and charts
+- [MkDocs Material](https://squidfunk.github.io/mkdocs-material/): Create and build site
+- [Poetry](https://python-poetry.org/)
+- [PSeint](http://pseint.sourceforge.net): Tool to simulate flowchart

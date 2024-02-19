@@ -1,6 +1,6 @@
 # Algoritmos
 
-Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.com/), enfocado al aprendizaje de algoritmos y diagramas de flujo;  para el **Módulo III**: **_______**, del **Submódulo II: Utiliza y programa tarjetas de control para sistemas mecatrónicos**.
+Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.com/), enfocado al aprendizaje de algoritmos y diagramas de flujo;  para el **Módulo III**: **Automatización**, del **Submódulo II: Utiliza y programa tarjetas de control para sistemas mecatrónicos**.
 
 
 ## Mapa del sitio
@@ -8,15 +8,17 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 <!-- Map site insert -->
 
 <!-- Map site start -->
+<!-- AUTO GENERATED -->
 ```markmap
+
 # Algoritmos
 
 ## [Algoritmos y Diagramas de Flujo](00_Algoritmos#algoritmos-y-diagramas-de-flujo)
 
-### [Definiciones](00_Algoritmos#definiciones)
-### [Algoritmo](00_Algoritmos#algoritmo)
-### [Diagrama de flujo](00_Algoritmos#diagrama-de-flujo)
-### [Pseudocódigo](00_Algoritmos#pseudocodigo)
+* [Definiciones](00_Algoritmos#definiciones)
+* [Algoritmo](00_Algoritmos#algoritmo)
+* [Diagrama de flujo](00_Algoritmos#diagrama-de-flujo)
+* [Pseudocódigo](00_Algoritmos#pseudocodigo)
 
 #### [Ejemplos](00_Algoritmos#ejemplos)
 
@@ -30,7 +32,7 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 
 ## [Variables](03_Variables#variables)
 
-### [Que es una variable?](03_Variables#que-es-una-variable?)
+### [¿Qué es una variable?](03_Variables#¿que-es-una-variable?)
 ### [Qué es declarar una variable?](03_Variables#que-es-declarar-una-variable?)
 ### [Cómo nombrar una variable?](03_Variables#como-nombrar-una-variable?)
 
@@ -95,6 +97,7 @@ Este material fue realizado por [Alejandro Leyva](https://www.alejandro-leyva.co
 ```
 <!-- Map site end -->
 
+---
 
 ^^Cualquier detalle, mejora, corrección o error notificarme a mi correo^^: [alejandro.leyva.us@gmail.com](mailto:alejandro.leyva.us@gmail.com), o en su defecto hacer un pull-request al [repositorio](https://github.com/jalmx/algoritmos)
 

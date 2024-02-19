@@ -1,9 +1,11 @@
 ---
-title: Practicas
+title: Prácticas en C
 author: Alejandro Leyva
 ---
 
 ![banner micro](https://www.alejandro-leyva.com/micro-21/web/imgs/banner.png)
+
+<!-- TODO: Revisar estos ejercicios -->
 
 # Practicas - Parcial 2 (C)
 
@@ -40,15 +42,16 @@ author: Alejandro Leyva
 
 1. Solicitar al usuario su promedio actual, en valor entero, el algoritmo debe tomar la decisión con basé al número ingresado, y dar un mensaje (ver la tabla)
    
-   | Rango de calificación  | Mensaje a imprimir                        |
-   | ---------------------- | ----------------------------------------- |
-   | 0 a menor que 6        | "lastima margarito"                       |
-   | 6 a menor que 7        | "Aplícate"                                |
-   | 7 a menor que 8        | "Apenitas y la libraste, metele papí"     |
-   | 8 a menor que 9        | "Bastante bien, puedes mejorar"           |
-   | 9 a menor que 10       | "muy bien amiguito, te ganaste la cheve!" |
-   | Igual a 10             | "Excelente, tu muy bien"                  |
-   | Menor a 0 y mayor a 10 | "Calificación no posible"                 |
+      | Rango de calificación  | Mensaje a imprimir                        |
+      | ---------------------- | ----------------------------------------- |
+      | 0 a menor que 6        | "lastima margarito"                       |
+      | 6 a menor que 7        | "Aplícate"                                |
+      | 7 a menor que 8        | "Apenitas y la libraste, metele papí"     |
+      | 8 a menor que 9        | "Bastante bien, puedes mejorar"           |
+      | 9 a menor que 10       | "muy bien amiguito, te ganaste la cheve!" |
+      | Igual a 10             | "Excelente, tu muy bien"                  |
+      | Menor a 0 y mayor a 10 | "Calificación no posible"                 |
+
 2. Cálculo de BMI (Indice de Masa Corporal) para peso y altura, indicando cual es tu BMI y en que nivel de obesidad te encuentras (*Ver tabla*). La formula es $BMI = peso (kg) * estatura^2 (cm)$
    
       | IMC                | Nivel de peso |
@@ -57,6 +60,7 @@ author: Alejandro Leyva
       | 18.5 – 24.9        | Normal        |
       | 25.0 – 29.9        | Sobrepeso     |
       | 30.0 o más         | Obesidad      |
+
 3. Mandar la letra del múltiplo o submultiple correspondiente, es decir, si el usuario ingresa el valor de 1,000, el valor que se debe desplegar por pantalla es la letra "K", si el usuario ingresa el valor de 0.02, se debe desplegar por pantalla la letra "m"
       
       | Unidad | Símbolo | Rango       |

@@ -17,7 +17,7 @@ La estructura de repetición o ciclo no ayuda a realizar iteraciones para realiz
 
 Para poder lograr esto necesitamos una variable *auxiliar* la cual nos ayudara a saber si debemos terminar o continuar con la repetición.
 
-**Ejemplos de nombres que recibe esta variable:** (Recordar las reglas de [como nombrar variables](03_Variables#c%C3%B3mo-nombrar-una-variable))
+**Ejemplos de nombres que recibe esta variable:** (Recordar las reglas de [como nombrar variables](03_Variables.md#cómo-nombrar-una-variable))
 
 - `x`
 - `i`

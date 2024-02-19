@@ -5,7 +5,7 @@ author: Alejandro Leyva
 
 ![banner micro](https://www.alejandro-leyva.com/micro-21/web/imgs/banner.png)
 
-# Practicas - Parcial 2 (Python, Lua)
+# Practicas - Parcial 2 (Python, Lua, Dart, JAVA)
 
 ## Básicos
 

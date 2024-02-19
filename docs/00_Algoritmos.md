@@ -1,8 +1,7 @@
 ---
 title: Algoritmos y diagrama de flujo
-description: "Documentacion sobre los diagramas de flujo"
+description: "Documentación sobre los diagramas de flujo"
 date: 2022-03-06
-icon: material/emoticon-happy
 tags:
     - inicio
     - introducción
@@ -18,12 +17,12 @@ twitter:image : "https://raw.githubusercontent.com/jalmx/mecatronica85/master/as
 
 ## Definiciones
 
-## Algoritmo
+### Algoritmo
 
 !!! note "Algoritmo"
     **Es una secuencia de pasos finitos y ordenados, para resolver un problema.**
 
-### Ejemplos
+#### Ejemplos
 
 - Receta de cocina
 - Un Manual
@@ -34,17 +33,17 @@ twitter:image : "https://raw.githubusercontent.com/jalmx/mecatronica85/master/as
 - Un plan
 - Una estrategia
 
-## Diagrama de flujo
+### Diagrama de flujo
 
 !!! note "Diagrama de Flujo"
     **Es una representación gráfica de un algoritmo.**
     
 
-## Pseudocódigo
+### Pseudocódigo
 
 Es una manera de expresar un algoritmo de manera natural, muy cercano a una receta de cocina o unas simples instrucciones.
 
-**Ejemplo:**
+#### Ejemplos
 
 1. Escribir el mensaje en pantalla "Ingrese el primer numero:"
 2. Almacenar en la variable A el valor dado por el usuario
