@@ -1,3 +1,7 @@
 site/
 test/
 .mypy_cache
+venv
+.venv
+env
+.env
