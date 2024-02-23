@@ -69,12 +69,12 @@ Los siguientes ejercicios se debe aplicar ciclos, de lo contrario no se toma cor
 2. Leer 10 números enteros, solicitando uno a uno al usuario, e imprimir al final cuántos fueron par y cuántos impar.
 3. Solicitar al usuario 5 números, uno a uno, ir sumando los números pares e imprimir el resultado de la suma
 4.  **Calculadora de la segunda ley de Newton**. Tiene el menú indicando que desea calcular (fuerza, masa o aceleración) y la opción de salir. Después solicita al usuario los valores e imprimir el resultado, debe regresar al menú inicial, para volver a calcular otra cosa, solo si da la opción de salir, termina el programa. Si da una opción incorrecta, muestra un mensaje de error y vuelve a mostrar el menu.
-5. Calcular la potencia de un número, solicita al usuario el número que desea elevar y después la base a la cuál lo elevara. Ejemplo: *==2^2= 4, 2^3=8==*
+5. Calcular la potencia de un número, solicita al usuario el número que es la base y después la potencia a la cual se va a elevar. Ejemplo: *==2^2= 4, 2^3=8==*
 6. Leer 10 números, solicitando uno a uno al usuario, y al final se imprime por pantalla el número más alto ingresado de los 10.
 7. Cálculo de la **media de un conjunto de datos**. Se le pregunta al usuario **cuantos números son**, comienza a pedirlos uno a uno y al final imprime el resultado de la media de todos los datos.
 8. Cálculo de la **media de un conjunto de datos positivos**. En cada iteración **pregunta al usuario si quiere terminar** para conocer el resultado o ingresar otro valor. Cuando elija terminar, imprimir el valor total del promedio o media.
 9. Imprimir la tabla de multiplicar que el usuario elija y también el usuario elije hasta que numero termina. Es decir, si da quiere la tabla del 15, y quiere ver hasta el 200, pues la ultima operación que vea por pantalla sera *15x200=3000*
-10. Algoritmo para convertir número decimal a binario, debe ir mostrando el numero en binario uno a uno, no es todo el numero binario completo, comenzando por el bit mas significativo. Por ejemplo el usuario ingresa el valor de 95, debe imprimir 11111001. Dado que 5 en binario es 1011111. Investigar como hace la conversión.
+10. Algoritmo para convertir número decimal a binario, debe ir mostrando el numero en binario uno a uno, no es todo el numero binario completo, comenzando por el bit mas significativo. Por ejemplo el usuario ingresa el valor de 95, debe imprimir 11111001. Dado que 95 en binario es 1011111. Investigar como hace la conversión.
 11. Una pastelería nos solicita realizar un programa para una maquina de pastelitos, las opciones son las siguientes
 
       ![esquema](img/diagra1.svg)

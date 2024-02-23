@@ -26,22 +26,20 @@
 24. Ejercicio: Ley de ohm
 25. Ejercicio: Calculo de resistencia en serie y paralelo, 2 valores
 26. Calcular el promedio final, solicita al usuario sus calificaciones parciales una a una, y al final da el mensaje "Aprobado", en caso que haya pasado arriba de 6 y "Estas en repite" si es menor.
-27. Operadores lógicos
-28. de lo contrario "sera pato a la orange"
-29. Ejercicio: Solicitar una calificación al usuario de alguna materia, en caso de un valor de 0 a menor a 6, decir, "no has aprobado", en caso que haya sacado de 6 a 10, decir, "aprobaste", en caso que no este en estos rangos, decir, "La calificación no es posible"
-30.  Preguntar al usuario si le "gusta correr" y después si le "gusta nadar", si ambos casos responde que *1)si* *2)no*, mandar el mensaje de que "es muy fitness", de lo contrario "deberías hacer más ejercicio" (Operadores lógicos)
-31.  Ciclo, concepto del contador o variable auxiliar, ejemplo de que un alumno vaya abrir la puerta n veces o que un alumno haga n sentadillas y los demás cuenten; estamos viendo el concepto de contador
-32. Ejemplo: Imprimir 5 veces la palabra "Hola"
-33. Ejemplo: Imprimir del 0 al 5
-34. Ejemplo: Diagrama de flujo del carrito seguidor de línea (ciclos infinitos)
-35. Ejercicio: Imprimir del 1 al 10 
-36. Ejercicio: Hacer una calculadora de 2 números, que tenga la opción de sumar, restar y salir, si da una opción que no esta, volver a mostrar el menu inicial, el usuario solo podrá salir si elije la opción de salir. Cada que termina de hacer la operación de sumar o restar, volver a mostrar el menú
-37. Ejemplo: Imprimir la tabla de multiplicar del 3, del 1 al 10
-38. Operadores combinados
-39. Ejercicio: Imprimir la tabla de multiplicar que el usuario elija, del 1 al 10
-40. Calcular el promedio final, solicita al usuario sus calificaciones parciales una a una, y al final da el mensaje "Aprobado", en caso que haya pasado arriba de 6 y "Estas en repite" si es menor.(Con ciclos)
-41. Calcular el factorial de un número entero. Se le solicita al usuario que ingrese un número entero el cuál quiere calcular el factorial del mismo. ==Ejemplo: 5! = 120==
-42. Obtener el promedio de 3 materias, solicitando cada materia e imprimir el resultado
-43. Ejercicio: Promedio de 3 parciales (con un ciclo), y si saco entre 0 a menor que 6, indicar que no paso, y se va a recursamiento, si saco entre 6 a 10, indicar que paso. Si da un calificación que no existe, indicar que no existe
-44. Realizar una calculadora de para resistencia en seria, la cantidad de resistencias es ilimitada, el usuario decide cuando debe parar la solicitud de valores, es decir, para detener el programa se debe dar el valor de -1.
-45. Realizar una calculadora de serie y paralelo, el usuario cual elije, la solicitud es infinita, hasta que le usuario decide cuando terminar, la opción de salir es -1.
+27. **Operadores lógicos**
+28. Ejercicio: Solicitar una calificación al usuario una calificación, en caso de un valor de 0 a menor a 6, decir, "no has aprobado", en caso que haya sacado de 6 a 10, decir, "aprobaste", en caso que no este en estos rangos, decir, "La calificación no es posible"
+29.  Preguntar al usuario si le "gusta correr" y después si le "gusta nadar", si ambos casos responde que *1)si* *2)no*, mandar el mensaje de que "es muy fitness", de lo contrario "deberías hacer más ejercicio" (Operadores lógicos)
+30.  Ciclo, concepto del contador o variable auxiliar, ejemplo de que un alumno vaya abrir la puerta n veces o que un alumno haga n sentadillas y los demás cuenten; estamos viendo el concepto de contador
+31. Ejemplo: Imprimir 5 veces la palabra "Hola"
+32. Ejemplo: Imprimir del 0 al 5
+33. Ejemplo: Diagrama de flujo del carrito seguidor de línea (ciclos infinitos)
+34. Ejercicio: Imprimir del 1 al 10 
+35. Ejercicio: Hacer una calculadora de 2 números, que tenga la opción de sumar, restar y salir, si da una opción que no esta, volver a mostrar el menu inicial y da un mensaje "No existe la opción", el usuario solo podrá salir si elije la opción de salir. Cada que termina de hacer la operación de sumar o restar, volver a mostrar el menú, hasta que elija salir de la aplicación.
+36. Ejemplo: Imprimir la tabla de multiplicar del 3, del 1 al 10
+37. Operadores combinados
+38. Ejercicio: Imprimir la tabla de multiplicar que el usuario elija, del 1 al 10
+39. Calcular el promedio final, solicita al usuario sus calificaciones parciales una a una, y al final da el mensaje "Aprobado", en caso que haya pasado arriba de 6 y "Estas en repite" si es menor.(Con ciclos)
+40. Calcular el factorial de un número entero. Se le solicita al usuario que ingrese un número entero el cuál quiere calcular el factorial del mismo. ==Ejemplo: 5! = 120==
+41. Ejercicio: Obtener el promedio de una materias, solicitando cada parcial (3) (CON UN CICLO), al final imprime el promedio
+42. Ejercicio: Promedio de 3 parciales (con un ciclo), y si saco entre 0 a menor que 6, indicar que no paso, y se va a recursamiento, si saco entre 6 a 10, indicar que paso. Si da un calificación que no existe, indicar que no existe
+43. Realizar una calculadora de serie y paralelo, el usuario cual elije, la solicitud es infinita, hasta que le usuario decide cuando terminar, la opción de salir es -1.
