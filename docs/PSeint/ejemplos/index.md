@@ -350,6 +350,17 @@ FinAlgoritmo
 
 ![diagrama](assets/resistencia_serie_infinita.png)
 
+<!-- ## Nombre del programa
+
+### Código PSeint
+
+```python
+
+```
+### Diagrama de flujo
+
+<!-- ![diagrama]() -->
+
 ## Nombre del programa
 
 ### Código PSeint
@@ -359,15 +370,4 @@ FinAlgoritmo
 ```
 ### Diagrama de flujo
 
-![diagrama]()
-
-## Nombre del programa
-
-### Código PSeint
-
-```python
-
-```
-### Diagrama de flujo
-
-![diagrama]()
+<!-- ![diagrama]() -->

@@ -42,4 +42,5 @@
 40. Calcular el factorial de un número entero. Se le solicita al usuario que ingrese un número entero el cuál quiere calcular el factorial del mismo. ==Ejemplo: 5! = 120==
 41. Ejercicio: Obtener el promedio de una materias, solicitando cada parcial (3) (CON UN CICLO), al final imprime el promedio
 42. Ejercicio: Promedio de 3 parciales (con un ciclo), y si saco entre 0 a menor que 6, indicar que no paso, y se va a recursamiento, si saco entre 6 a 10, indicar que paso. Si da un calificación que no existe, indicar que no existe
-43. Realizar una calculadora de serie y paralelo, el usuario cual elije, la solicitud es infinita, hasta que le usuario decide cuando terminar, la opción de salir es -1.
+43. Realizar una calculadora de resistencia serie, el usuario ira introduciendo los valores uno a uno, la solicitud es infinita, hasta que le usuario decide cuando terminar, la opción de salir es -1, después de terminar imprime el resultado
+44. Realizar una calculadora de resistencia serie y paralelo, el usuario cual elije la opción, el usuario ira introduciendo los valores uno a uno, la solicitud es infinita, hasta que le usuario decide cuando terminar, la opción de salir es -1. después de terminar imprime el resultado
